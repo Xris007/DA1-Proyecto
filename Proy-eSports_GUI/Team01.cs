@@ -22,5 +22,11 @@ namespace Proy_eSports_GUI
             Team02 frm02 = new Team02();
             frm02.ShowDialog();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            Team03 frm03 = new Team03();
+            frm03.ShowDialog();
+        }
     }
 }

@@ -16,5 +16,18 @@ namespace Proy_eSports_GUI
         {
             InitializeComponent();
         }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            Tournament02 frm02 = new Tournament02();
+            frm02.ShowDialog();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            Tournament03 frm03 = new Tournament03();
+            frm03.ShowDialog();
+
+        }
     }
 }

@@ -60,6 +60,12 @@
     <Compile Include="DetailTournament02.Designer.cs">
       <DependentUpon>DetailTournament02.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetailTournament03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailTournament03.Designer.cs">
+      <DependentUpon>DetailTournament03.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,12 @@
     <EmbeddedResource Include="DetailTournament01.resx">
       <DependentUpon>DetailTournament01.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DetailTournament02.resx">
+      <DependentUpon>DetailTournament02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailTournament03.resx">
+      <DependentUpon>DetailTournament03.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tournament02.resx">
       <DependentUpon>Tournament02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tournament03.resx">
+      <DependentUpon>Tournament03.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

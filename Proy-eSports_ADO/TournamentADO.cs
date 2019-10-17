@@ -3,33 +3,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
 using System.Data.SqlClient;
 using Proy_eSports_BE;
-
+using System.Data;
 
 namespace Proy_eSports_ADO
 {
-    public class TeamADO
+    public class TournamentADO
     {
         ConexionADO MiConexion = new ConexionADO();
         SqlConnection connection = new SqlConnection();
         SqlCommand command = new SqlCommand();
         SqlDataReader dataReader;
 
-        public Boolean InsertTeam(TeamBE objTeamBE)
+        public Boolean InsertTournament(TournamentBE objTournamentBE)
         {
             connection.ConnectionString = MiConexion.GetCnx();
             command.Connection = connection;
             command.CommandType = CommandType.StoredProcedure;
-            command.CommandText = "InsertarEquipo";
+            command.CommandText = "InsertarTorneo";
 
-            command.Parameters.AddWithValue("@NomEquipo", objTeamBE.NomEquipo);
-            command.Parameters.AddWithValue("@PaisEquipo", objTeamBE.PaisEquipo);
+            command.Parameters.AddWithValue("@NomTorneo", objTournamentBE.NomTorneo);
+            command.Parameters.AddWithValue("@OrgTorneo", objTournamentBE.OrgTorneo);
+            command.Parameters.AddWithValue("@PaisTorneo", objTournamentBE.PaisTorneo);
+            command.Parameters.AddWithValue("@LugarTorneo", objTournamentBE.LugarTorneo);
+            command.Parameters.AddWithValue("@FechaInicioTorneo", objTournamentBE.FechaInicioTorneo);
+            command.Parameters.AddWithValue("@FechaFinTorneo", objTournamentBE.FechaFinTorneo);
+            command.Parameters.AddWithValue("@IdJuego", 1); //hasta desarrollar CRUD de juego
+
             try
             {
                 connection.Open();
-                command.ExecuteNonQuery(); 
+                command.ExecuteNonQuery();
                 return true;
             }
             catch (SqlException x)
@@ -46,17 +51,21 @@ namespace Proy_eSports_ADO
                 command.Parameters.Clear();
             }
         }
-
-        public Boolean UpdateTeam(TeamBE objTeamBE)
+        public Boolean UpdateTournament(TournamentBE objTournamentBE)
         {
             connection.ConnectionString = MiConexion.GetCnx();
             command.Connection = connection;
             command.CommandType = CommandType.StoredProcedure;
-            command.CommandText = "ActualizarEquipo";
+            command.CommandText = "ActualizarTorneo";
 
-            command.Parameters.AddWithValue("@IdEquipo", objTeamBE.IdEquipo);
-            command.Parameters.AddWithValue("@NomEquipo", objTeamBE.NomEquipo);
-            command.Parameters.AddWithValue("@PaisEquipo", objTeamBE.PaisEquipo);
+            command.Parameters.AddWithValue("@IdTorneo", objTournamentBE.IdTorneo);
+            command.Parameters.AddWithValue("@NomTorneo", objTournamentBE.NomTorneo);
+            command.Parameters.AddWithValue("@OrgTorneo", objTournamentBE.OrgTorneo);
+            command.Parameters.AddWithValue("@PaisTorneo", objTournamentBE.PaisTorneo);
+            command.Parameters.AddWithValue("@LugarTorneo", objTournamentBE.LugarTorneo);
+            command.Parameters.AddWithValue("@FechaInicioTorneo", objTournamentBE.FechaInicioTorneo);
+            command.Parameters.AddWithValue("@FechaFinTorneo", objTournamentBE.FechaFinTorneo);
+            command.Parameters.AddWithValue("@IdJuego", 1); //hasta desarrollar CRUD de juego
             try
             {
                 connection.Open();
@@ -77,14 +86,14 @@ namespace Proy_eSports_ADO
             }
         }
 
-        public Boolean DeleteTeam(String TeamId)
+        public Boolean DeleteTournament(String TournId)
         {
             connection.ConnectionString = MiConexion.GetCnx();
             command.Connection = connection;
             command.CommandType = CommandType.StoredProcedure;
-            command.CommandText = "EliminarEquipo";
+            command.CommandText = "EliminarTorneo";
 
-            command.Parameters.AddWithValue("@IDEQUIPO", TeamId);
+            command.Parameters.AddWithValue("@IdTorneo", TournId);
             try
             {
                 connection.Open();
@@ -105,28 +114,33 @@ namespace Proy_eSports_ADO
             }
         }
 
-        public TeamBE ConsultTeam(String TeamId)
+        public TournamentBE ConsultTournament(String TournId)
         {
-            TeamBE objTeamBE = new TeamBE();
+            TournamentBE objTournamentBE = new TournamentBE();
             try
             {
                 connection.ConnectionString = MiConexion.GetCnx();
                 command.Connection = connection;
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "EliminarEquipo";
+                command.CommandText = "ConsultarTorneo";
 
-                command.Parameters.AddWithValue("@IDEQUIPO", TeamId);
+                command.Parameters.AddWithValue("@IdTorneo", TournId);
 
                 connection.Open();
-                dataReader = command.ExecuteReader(); 
+                dataReader = command.ExecuteReader();
 
                 if (dataReader.HasRows)
                 {
                     dataReader.Read();
 
-                    objTeamBE.IdEquipo = Convert.ToInt32(dataReader["IdEquipo"]);
-                    objTeamBE.NomEquipo = dataReader["NomEquipo"].ToString();
-                    objTeamBE.PaisEquipo = dataReader["PaisEquipo"].ToString();
+                    objTournamentBE.IdTorneo = Convert.ToInt32(dataReader["IdTorneo"]);
+                    objTournamentBE.NomTorneo = dataReader["NomTorneo"].ToString();
+                    objTournamentBE.OrgTorneo = dataReader["OrgTorneo"].ToString();
+                    objTournamentBE.PaisTorneo = dataReader["PaisTorneo"].ToString();
+                    objTournamentBE.LugarTorneo = dataReader["LugarTorneo"].ToString();
+                    objTournamentBE.FechaInicioTorneo = Convert.ToDateTime(dataReader["FechaInicioTorneo"]);
+                    objTournamentBE.FechaFinTorneo = Convert.ToDateTime(dataReader["FechaFinTorneo"]);
+                    objTournamentBE.IdJuego = Convert.ToInt32(dataReader["IdJuego"]);
                 }
                 dataReader.Close();
             }
@@ -142,9 +156,9 @@ namespace Proy_eSports_ADO
                 }
                 command.Parameters.Clear();
             }
-            return objTeamBE;
+            return objTournamentBE;
         }
-        public DataTable ListTeams()
+        public DataTable ListTournaments()
         {
             DataSet dataSet = new DataSet();
             try
@@ -152,18 +166,18 @@ namespace Proy_eSports_ADO
                 connection.ConnectionString = MiConexion.GetCnx();
                 command.Connection = connection;
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "ListarEquipo";
+                command.CommandText = "ListarTorneo";
 
                 SqlDataAdapter adapter;
                 adapter = new SqlDataAdapter(command);
 
-                adapter.Fill(dataSet, "Equipo");
+                adapter.Fill(dataSet, "Torneo");
             }
             catch (SqlException ex)
             {
                 throw new Exception(ex.Message);
             }
-            return dataSet.Tables["Equipo"];
+            return dataSet.Tables["Torneo"];
         }
     }
 }

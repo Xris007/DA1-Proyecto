@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.btnSalir = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dtgDeatilTeam = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgDeatilTeam)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -44,15 +44,17 @@
             this.btnSalir.TabIndex = 9;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // button3
+            // btnDelete
             // 
-            this.button3.Location = new System.Drawing.Point(562, 323);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(562, 323);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 8;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -74,13 +76,13 @@
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
-            // dataGridView1
+            // dtgDeatilTeam
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(706, 271);
-            this.dataGridView1.TabIndex = 5;
+            this.dtgDeatilTeam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgDeatilTeam.Location = new System.Drawing.Point(12, 12);
+            this.dtgDeatilTeam.Name = "dtgDeatilTeam";
+            this.dtgDeatilTeam.Size = new System.Drawing.Size(706, 271);
+            this.dtgDeatilTeam.TabIndex = 5;
             // 
             // DetailTournament01
             // 
@@ -88,14 +90,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 365);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnInsert);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgDeatilTeam);
             this.Name = "DetailTournament01";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DetailTournament01";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.DetailTournament01_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgDeatilTeam)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -103,9 +106,9 @@
         #endregion
 
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnInsert;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgDeatilTeam;
     }
 }

@@ -54,8 +54,8 @@
             // opcionesToolStripMenuItem
             // 
             this.opcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.teamToolStripMenuItem,
             this.torneoToolStripMenuItem,
+            this.teamToolStripMenuItem,
             this.detailTournamentToolStripMenuItem,
             this.toolStripMenuItem1,
             this.restartToolStripMenuItem,

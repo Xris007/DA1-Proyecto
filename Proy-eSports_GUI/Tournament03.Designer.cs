@@ -29,39 +29,39 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtLocation = new System.Windows.Forms.TextBox();
+            this.dtpEnd = new System.Windows.Forms.DateTimePicker();
+            this.dtpStart = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtTeamName = new System.Windows.Forms.TextBox();
             this.txtCountry = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtTourName = new System.Windows.Forms.TextBox();
+            this.txtOrgTour = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.txtLocation);
+            this.groupBox1.Controls.Add(this.dtpEnd);
+            this.groupBox1.Controls.Add(this.dtpStart);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtTeamName);
             this.groupBox1.Controls.Add(this.txtCountry);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txtTourName);
+            this.groupBox1.Controls.Add(this.txtOrgTour);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnCancel);
+            this.groupBox1.Controls.Add(this.btnUpdate);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(542, 306);
@@ -69,31 +69,31 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Team Info";
             // 
-            // textBox2
+            // txtLocation
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(330, 114);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(129, 22);
-            this.textBox2.TabIndex = 15;
+            this.txtLocation.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLocation.Location = new System.Drawing.Point(330, 114);
+            this.txtLocation.Name = "txtLocation";
+            this.txtLocation.Size = new System.Drawing.Size(129, 22);
+            this.txtLocation.TabIndex = 15;
             // 
-            // dateTimePicker2
+            // dtpEnd
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(332, 159);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(127, 22);
-            this.dateTimePicker2.TabIndex = 14;
+            this.dtpEnd.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpEnd.Location = new System.Drawing.Point(332, 159);
+            this.dtpEnd.Name = "dtpEnd";
+            this.dtpEnd.Size = new System.Drawing.Size(127, 22);
+            this.dtpEnd.TabIndex = 14;
             // 
-            // dateTimePicker1
+            // dtpStart
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(113, 159);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(127, 22);
-            this.dateTimePicker1.TabIndex = 13;
+            this.dtpStart.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpStart.Location = new System.Drawing.Point(113, 159);
+            this.dtpStart.Name = "dtpStart";
+            this.dtpStart.Size = new System.Drawing.Size(127, 22);
+            this.dtpStart.TabIndex = 13;
             // 
             // label6
             // 
@@ -125,13 +125,13 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Location:";
             // 
-            // textBox1
+            // txtCountry
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(97, 114);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(129, 22);
-            this.textBox1.TabIndex = 7;
+            this.txtCountry.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCountry.Location = new System.Drawing.Point(97, 114);
+            this.txtCountry.Name = "txtCountry";
+            this.txtCountry.Size = new System.Drawing.Size(129, 22);
+            this.txtCountry.TabIndex = 7;
             // 
             // label3
             // 
@@ -143,21 +143,21 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Country:";
             // 
-            // txtTeamName
+            // txtTourName
             // 
-            this.txtTeamName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTeamName.Location = new System.Drawing.Point(234, 45);
-            this.txtTeamName.Name = "txtTeamName";
-            this.txtTeamName.Size = new System.Drawing.Size(225, 22);
-            this.txtTeamName.TabIndex = 0;
+            this.txtTourName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTourName.Location = new System.Drawing.Point(234, 45);
+            this.txtTourName.Name = "txtTourName";
+            this.txtTourName.Size = new System.Drawing.Size(225, 22);
+            this.txtTourName.TabIndex = 0;
             // 
-            // txtCountry
+            // txtOrgTour
             // 
-            this.txtCountry.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCountry.Location = new System.Drawing.Point(234, 78);
-            this.txtCountry.Name = "txtCountry";
-            this.txtCountry.Size = new System.Drawing.Size(225, 22);
-            this.txtCountry.TabIndex = 1;
+            this.txtOrgTour.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrgTour.Location = new System.Drawing.Point(234, 78);
+            this.txtOrgTour.Name = "txtOrgTour";
+            this.txtOrgTour.Size = new System.Drawing.Size(225, 22);
+            this.txtOrgTour.TabIndex = 1;
             // 
             // label2
             // 
@@ -179,25 +179,26 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Tournament Name:";
             // 
-            // button2
+            // btnCancel
             // 
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(413, 237);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 40);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(413, 237);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(93, 40);
+            this.btnCancel.TabIndex = 4;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(314, 237);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(314, 237);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(93, 40);
+            this.btnUpdate.TabIndex = 3;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // Tournament03
             // 
@@ -207,6 +208,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Tournament03";
             this.Text = "Update Tournament";
+            this.Load += new System.EventHandler(this.Tournament03_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -216,19 +218,19 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtLocation;
+        private System.Windows.Forms.DateTimePicker dtpEnd;
+        private System.Windows.Forms.DateTimePicker dtpStart;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtTeamName;
         private System.Windows.Forms.TextBox txtCountry;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtTourName;
+        private System.Windows.Forms.TextBox txtOrgTour;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

@@ -84,7 +84,7 @@ namespace Proy_eSports_ADO
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "EliminarEquipo";
 
-            command.Parameters.AddWithValue("@IDEQUIPO", TeamId);
+            command.Parameters.AddWithValue("@IdEquipo", TeamId);
             try
             {
                 connection.Open();
@@ -113,9 +113,9 @@ namespace Proy_eSports_ADO
                 connection.ConnectionString = MiConexion.GetCnx();
                 command.Connection = connection;
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "EliminarEquipo";
+                command.CommandText = "ConsultarEquipo";
 
-                command.Parameters.AddWithValue("@IDEQUIPO", TeamId);
+                command.Parameters.AddWithValue("@IdEquipo", TeamId);
 
                 connection.Open();
                 dataReader = command.ExecuteReader(); 

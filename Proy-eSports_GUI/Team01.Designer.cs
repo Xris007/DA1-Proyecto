@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgTeam = new System.Windows.Forms.DataGridView();
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTeam)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgTeam
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(706, 271);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgTeam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgTeam.Location = new System.Drawing.Point(12, 12);
+            this.dtgTeam.Name = "dtgTeam";
+            this.dtgTeam.Size = new System.Drawing.Size(706, 271);
+            this.dtgTeam.TabIndex = 0;
             // 
             // btnInsert
             // 
@@ -64,14 +64,15 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // button3
+            // btnDelete
             // 
-            this.button3.Location = new System.Drawing.Point(562, 323);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(562, 323);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSalir
             // 
@@ -81,6 +82,7 @@
             this.btnSalir.TabIndex = 4;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // Team01
             // 
@@ -88,25 +90,26 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 365);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnInsert);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgTeam);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Team01";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team01";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Team01_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTeam)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgTeam;
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnSalir;
     }
 }

@@ -33,8 +33,8 @@
             this.txtCountry = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,8 +44,8 @@
             this.groupBox1.Controls.Add(this.txtCountry);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnCancel);
+            this.groupBox1.Controls.Add(this.btnUpdate);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(412, 209);
@@ -89,25 +89,27 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Name Team:";
             // 
-            // button2
+            // btnCancel
             // 
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(313, 135);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 40);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(313, 135);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(93, 40);
+            this.btnCancel.TabIndex = 4;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(214, 135);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(214, 135);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(93, 40);
+            this.btnUpdate.TabIndex = 3;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // Team03
             // 
@@ -116,7 +118,9 @@
             this.ClientSize = new System.Drawing.Size(436, 233);
             this.Controls.Add(this.groupBox1);
             this.Name = "Team03";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update Team";
+            this.Load += new System.EventHandler(this.Team03_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -126,11 +130,11 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtTeamName;
-        private System.Windows.Forms.TextBox txtCountry;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        internal System.Windows.Forms.TextBox txtTeamName;
+        internal System.Windows.Forms.TextBox txtCountry;
+        internal System.Windows.Forms.Button btnCancel;
+        internal System.Windows.Forms.Button btnUpdate;
     }
 }

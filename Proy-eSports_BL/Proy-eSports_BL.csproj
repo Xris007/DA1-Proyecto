@@ -42,7 +42,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DetailTeamBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TeamBL.cs" />
+    <Compile Include="TournamentBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Proy-eSports_ADO\Proy-eSports_ADO.csproj">
+      <Project>{7ed528c1-fdcc-4870-9f8e-af1a2f9973d2}</Project>
+      <Name>Proy-eSports_ADO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proy-eSports_BE\Proy-eSports_BE.csproj">
+      <Project>{409a2556-d3bb-488b-aae8-45f98ce7062c}</Project>
+      <Name>Proy-eSports_BE</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

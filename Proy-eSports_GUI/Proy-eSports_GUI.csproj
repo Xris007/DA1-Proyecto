@@ -170,10 +170,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Proy-eSports_BE\Proy-eSports_BE.csproj">
+      <Project>{409a2556-d3bb-488b-aae8-45f98ce7062c}</Project>
+      <Name>Proy-eSports_BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proy-eSports_BL\Proy-eSports_BL.csproj">
+      <Project>{7aac1a52-ae95-4c6f-a6a2-92e01e73cd25}</Project>
+      <Name>Proy-eSports_BL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPlacement = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtTeamName = new System.Windows.Forms.TextBox();
-            this.txtCountry = new System.Windows.Forms.TextBox();
+            this.txtVictories = new System.Windows.Forms.TextBox();
+            this.txtDefeats = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtPlacement);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtTeamName);
-            this.groupBox1.Controls.Add(this.txtCountry);
+            this.groupBox1.Controls.Add(this.txtVictories);
+            this.groupBox1.Controls.Add(this.txtDefeats);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnCancel);
+            this.groupBox1.Controls.Add(this.btnUpdate);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(411, 195);
@@ -57,45 +57,45 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data";
             // 
-            // textBox1
+            // txtPlacement
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(130, 119);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(104, 22);
-            this.textBox1.TabIndex = 8;
+            this.txtPlacement.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPlacement.Location = new System.Drawing.Point(130, 119);
+            this.txtPlacement.Name = "txtPlacement";
+            this.txtPlacement.Size = new System.Drawing.Size(104, 22);
+            this.txtPlacement.TabIndex = 8;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(40, 119);
+            this.label3.Location = new System.Drawing.Point(22, 119);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 17);
+            this.label3.Size = new System.Drawing.Size(76, 17);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Position:";
+            this.label3.Text = "Placement:";
             // 
-            // txtTeamName
+            // txtVictories
             // 
-            this.txtTeamName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTeamName.Location = new System.Drawing.Point(130, 48);
-            this.txtTeamName.Name = "txtTeamName";
-            this.txtTeamName.Size = new System.Drawing.Size(104, 22);
-            this.txtTeamName.TabIndex = 0;
+            this.txtVictories.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVictories.Location = new System.Drawing.Point(130, 48);
+            this.txtVictories.Name = "txtVictories";
+            this.txtVictories.Size = new System.Drawing.Size(104, 22);
+            this.txtVictories.TabIndex = 0;
             // 
-            // txtCountry
+            // txtDefeats
             // 
-            this.txtCountry.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCountry.Location = new System.Drawing.Point(130, 83);
-            this.txtCountry.Name = "txtCountry";
-            this.txtCountry.Size = new System.Drawing.Size(104, 22);
-            this.txtCountry.TabIndex = 1;
+            this.txtDefeats.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDefeats.Location = new System.Drawing.Point(130, 83);
+            this.txtDefeats.Name = "txtDefeats";
+            this.txtDefeats.Size = new System.Drawing.Size(104, 22);
+            this.txtDefeats.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(40, 88);
+            this.label2.Location = new System.Drawing.Point(40, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 6;
@@ -111,25 +111,27 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Victories:";
             // 
-            // button2
+            // btnCancel
             // 
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(286, 101);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 40);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(286, 101);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(93, 40);
+            this.btnCancel.TabIndex = 4;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(286, 48);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Upadate";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(286, 48);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(93, 40);
+            this.btnUpdate.TabIndex = 3;
+            this.btnUpdate.Text = "Upadate";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // DetailTournament03
             // 
@@ -139,6 +141,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "DetailTournament03";
             this.Text = "Update Detail Tournament ";
+            this.Load += new System.EventHandler(this.DetailTournament03_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -148,13 +151,13 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPlacement;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtTeamName;
-        private System.Windows.Forms.TextBox txtCountry;
+        private System.Windows.Forms.TextBox txtVictories;
+        private System.Windows.Forms.TextBox txtDefeats;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proy_eSports_BE
 {
-    public class DetailTournamentBE
+    public class DetailTeamBE
     {
         private int mvarid_equipo;
         public int IdEquipo

@@ -83,15 +83,17 @@ namespace Proy_eSports_ADO
             }
         }
 
-        public Boolean DeleteDetailTeam(DetailTeamBE objDetailTeamBE)
+        public Boolean DeleteDetailTeam(String TeamId, String TounId)
         {
+            DetailTeamBE objDetailTeamBE = new DetailTeamBE();
+
             connection.ConnectionString = MiConexion.GetCnx();
             command.Connection = connection;
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "EliminarDetalle_Equipo";
 
-            command.Parameters.AddWithValue("@IdEquipo", objDetailTeamBE.IdEquipo);
-            command.Parameters.AddWithValue("@IdTorneo", objDetailTeamBE.IdTorneo);
+            command.Parameters.AddWithValue("@IdEquipo", TeamId);
+            command.Parameters.AddWithValue("@IdTorneo", TounId);
             try
             {
                 connection.Open();
@@ -112,9 +114,9 @@ namespace Proy_eSports_ADO
             }
         }
 
-        public DetailTeamBE ConsultDetailTeam(DetailTeamBE objDetailTeamBE)
+        public DetailTeamBE ConsultDetailTeam(String TeamId, String TounId)
         {
-            DetailTeamBE detailTeamBE2 = new DetailTeamBE();
+            DetailTeamBE objDetailTeamBE = new DetailTeamBE();
             try
             {
                 connection.ConnectionString = MiConexion.GetCnx();
@@ -122,8 +124,8 @@ namespace Proy_eSports_ADO
                 command.CommandType = CommandType.StoredProcedure;
                 command.CommandText = "ConsultarDetalle_Equipo";
 
-                command.Parameters.AddWithValue("@IdEquipo", objDetailTeamBE.IdEquipo);
-                command.Parameters.AddWithValue("@IdTorneo", objDetailTeamBE.IdTorneo);
+                command.Parameters.AddWithValue("@IdEquipo", TeamId);
+                command.Parameters.AddWithValue("@IdTorneo", TounId);
 
                 connection.Open();
                 dataReader = command.ExecuteReader();
@@ -132,11 +134,11 @@ namespace Proy_eSports_ADO
                 {
                     dataReader.Read();
 
-                    detailTeamBE2.IdEquipo = Convert.ToInt32(dataReader["IdEquipo"]);
-                    detailTeamBE2.IdTorneo = Convert.ToInt32(dataReader["IdTorneo"]);
-                    detailTeamBE2.Victorias = Convert.ToInt32(dataReader["Victorias"]);
-                    detailTeamBE2.Derrotas = Convert.ToInt32(dataReader["Derrotas"]);
-                    detailTeamBE2.Puesto = Convert.ToInt32(dataReader["Puesto"]);
+                    objDetailTeamBE.IdEquipo = Convert.ToInt32(dataReader["IdEquipo"]);
+                    objDetailTeamBE.IdTorneo = Convert.ToInt32(dataReader["IdTorneo"]);
+                    objDetailTeamBE.Victorias = Convert.ToInt32(dataReader["Victorias"]);
+                    objDetailTeamBE.Derrotas = Convert.ToInt32(dataReader["Derrotas"]);
+                    objDetailTeamBE.Puesto = Convert.ToInt32(dataReader["Puesto"]);
                 }
                 dataReader.Close();
             }
@@ -152,7 +154,7 @@ namespace Proy_eSports_ADO
                 }
                 command.Parameters.Clear();
             }
-            return detailTeamBE2;
+            return objDetailTeamBE;
         }
 
         public DataTable ListDetailTeam()

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
+
 namespace Proy_eSports_ADO
 {
     class ConexionADO

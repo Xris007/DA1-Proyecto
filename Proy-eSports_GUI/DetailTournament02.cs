@@ -17,6 +17,8 @@ namespace Proy_eSports_GUI
         TeamBL objTeamBL = new TeamBL();
         TournamentBL objTournamentBL = new TournamentBL();
 
+        
+
         DetailTeamBL objDetailTeamBL = new DetailTeamBL();
         DetailTeamBE objDetailTeamBE = new DetailTeamBE();
 
@@ -24,11 +26,25 @@ namespace Proy_eSports_GUI
         {
             InitializeComponent();
         }
+        String idEquipo;
+        public String Codigo1
+        {
+            get { return idEquipo; }
+            set { idEquipo = value; }
+
+        }
+        String idTournament;
+        public String Codigo2
+        {
+            get { return idTournament; }
+            set { idTournament = value; }
+        }
 
         private void DetailTournament02_Load(object sender, EventArgs e)
         {
             try
             {
+                
 
                 cboTeam.DataSource = objTeamBL.ListTeams();
                 cboTeam.ValueMember = "IdEquipo";
@@ -37,6 +53,8 @@ namespace Proy_eSports_GUI
                 cboTournament.DataSource = objTournamentBL.ListTournaments();
                 cboTournament.ValueMember = "IdTorneo";
                 cboTournament.DisplayMember = "NomTorneo";
+
+                
 
             }
 
@@ -51,6 +69,9 @@ namespace Proy_eSports_GUI
         {
             try
             {
+                objDetailTeamBE.IdEquipo = Convert.ToInt32(Codigo1);
+                objDetailTeamBE.IdTorneo = Convert.ToInt32(Codigo2);
+
                 objDetailTeamBE.Victorias = Convert.ToInt32(txtVictories.Text.Trim());
                 objDetailTeamBE.Derrotas = Convert.ToInt32(txtDefeats.Text.Trim());
                 objDetailTeamBE.Puesto = Convert.ToInt32(txtPlacement.Text.Trim());

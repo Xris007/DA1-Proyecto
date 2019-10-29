@@ -71,6 +71,9 @@ namespace Proy_eSports_GUI
         {
             try
             {
+                objDetailTeamBE.IdEquipo = Convert.ToInt32(Codigo1);
+                objDetailTeamBE.IdTorneo = Convert.ToInt32(Codigo2);
+
                 objDetailTeamBE.Victorias = Convert.ToInt32(txtVictories.Text.Trim());
                 objDetailTeamBE.Derrotas = Convert.ToInt32(txtDefeats.Text.Trim());
                 objDetailTeamBE.Puesto = Convert.ToInt32(txtPlacement.Text.Trim());

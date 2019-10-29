@@ -4,3 +4,9 @@ D:\Trabajos\Desarrollo\Test2\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports
 D:\Trabajos\Desarrollo\Test2\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.csproj.CoreCompileInputs.cache
 D:\Trabajos\Desarrollo\Test2\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.dll
 D:\Trabajos\Desarrollo\Test2\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.pdb
+D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_BE\bin\Debug\Proy-eSports_BE.dll
+D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_BE\bin\Debug\Proy-eSports_BE.pdb
+D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.csprojAssemblyReference.cache
+D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.csproj.CoreCompileInputs.cache
+D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.dll
+D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.pdb

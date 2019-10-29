@@ -42,11 +42,20 @@ namespace Proy_eSports_GUI
             try
             {
 
+
+                cboTeam.DataSource = objTeamBL.ListTeams();
+                cboTeam.ValueMember = "IdNombre";
+                cboTeam.DisplayMember = "NomEquipo";
+
+                cboTournament.DataSource = objTournamentBL.ListTournaments();
+                cboTournament.ValueMember = "IdTorneo";
+                cboTournament.DisplayMember = "NomTorneo";
+
                 objDetailTeamBE = objDetailTeamBL.ConsultDetailTeam(Codigo1, Codigo2);
+
                 
-                //Aca no se como va
+
                 //txtVictories.Text = objDetailTeamBE.Victorias;
-                
 
 
                 //txtDefeats.Text = objDetailTeamBE.Derrotas;

@@ -31,10 +31,12 @@ namespace Proy_eSports_GUI
             {
 
                 cboTeam.DataSource = objTeamBL.ListTeams();
-                cboTeam.ValueMember = "NomEquipo";
+                cboTeam.ValueMember = "IdEquipo";
+                cboTeam.DisplayMember = "NomEquipo";
 
                 cboTournament.DataSource = objTournamentBL.ListTournaments();
-                cboTournament.ValueMember = "NomTorneo";
+                cboTournament.ValueMember = "IdTorneo";
+                cboTournament.DisplayMember = "NomTorneo";
 
             }
 
@@ -50,8 +52,8 @@ namespace Proy_eSports_GUI
             try
             {
                 objDetailTeamBE.Victorias = Convert.ToInt32(txtVictories.Text.Trim());
-                //objDetailTeamBE.Derrotas = Convert.ToInt32(txtDefeats.Text.Trim());
-                //objDetailTeamBE.Puesto = Convert.ToInt32(txtPlacement.Text.Trim());
+                objDetailTeamBE.Derrotas = Convert.ToInt32(txtDefeats.Text.Trim());
+                objDetailTeamBE.Puesto = Convert.ToInt32(txtPlacement.Text.Trim());
 
                 if (objDetailTeamBL.InsertDetailTeam(objDetailTeamBE) == true)
                 {

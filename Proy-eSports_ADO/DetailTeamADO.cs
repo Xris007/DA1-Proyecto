@@ -178,5 +178,36 @@ namespace Proy_eSports_ADO
             }
             return dataSet.Tables["DETALLE_EQUIPO"];
         }
+
+        public DataTable ListDetailTeambyTournaments(String TeamId, String TounId1, String TounId2)
+        {
+            try
+            {
+                DataSet dataSet = new DataSet();
+                SqlDataAdapter ada;
+
+                //Conexion connection
+                connection.ConnectionString = MiConexion.GetCnx();
+                command.Connection = connection;
+                command.CommandType = CommandType.StoredProcedure;
+                command.CommandText = "ListDetailTeambyTournaments";
+
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@IdTeam", TeamId);
+                command.Parameters.AddWithValue("@IdTornament1", TounId1);
+                command.Parameters.AddWithValue("@IdTornament2", TounId2);
+
+                ada = new SqlDataAdapter(command);
+
+                ada.Fill(dataSet, "DETALLE_EQUIPO");
+                return dataSet.Tables["DETALLE_EQUIPO"];
+
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
     }
 }

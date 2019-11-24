@@ -7,13 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proy_eSports_BL;
+using Proy_eSports_BE;
 
 namespace Proy_eSports_GUI
 {
     public partial class frmLogin : Form
     {
+
+        LoginBE loginBE = new LoginBE();
+        LoginBL loginBL = new LoginBL();
+
         int intentos = 0;
-        int tiempo = 10;
+        int tiempo = 20;
         public frmLogin()
         {
             InitializeComponent();
@@ -21,10 +27,22 @@ namespace Proy_eSports_GUI
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+            DataTable dataTable = new DataTable();
+
+            loginBE.userEsport = txtLogin.Text.Trim();
+            loginBE.password = txtPassword.Text.Trim();
+
+            dataTable = loginBL.BL_Login(loginBE);
+
+
+
             if (txtLogin.Text.Trim() != "" & txtPassword.Text.Trim() != "")
             {
-                if (txtLogin.Text == "test" & txtPassword.Text == "12345")
+                if (dataTable.Rows.Count > 0)
                 {
+                    loginBE.userEsport = dataTable.Rows[0][0].ToString();
+                    loginBE.password = dataTable.Rows[0][1].ToString();
+
                     this.Hide();
                     timer1.Enabled = false;
                     MDIPrincipal mdi = new MDIPrincipal();

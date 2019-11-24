@@ -13,6 +13,8 @@ namespace Proy_eSports_BL
     {
         DetailTeamADO objDetailADO = new DetailTeamADO();
 
+        
+
         public Boolean InsertDetailTeam(DetailTeamBE objDetailBE)
         {
             return objDetailADO.InsertDetailTeam(objDetailBE);
@@ -33,6 +35,11 @@ namespace Proy_eSports_BL
         {
             return objDetailADO.ListDetailTeam();
         }
+        public DataTable ListDetailTeambyTournaments(String TeamId, String TounId1, String TounId2)
+        {
+            return objDetailADO.ListDetailTeambyTournaments(TeamId,TounId1,TounId2);
+        }
+       
 
     }
 }

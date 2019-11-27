@@ -12,14 +12,10 @@ namespace Proy_eSports_BL
     public class LoginBL
     {
         LoginADO objLoginADO = new LoginADO();
-        //Proy_eSports_ADO.LoginADO objLoginADO = new Proy_eSports_ADO.LoginADO();
-
-
         
-        
-        public DataTable BL_Login(Proy_eSports_BE.LoginBE loginBE)
+        public DataTable IngresarUsuario(String user1, String pass)
         {
-            return objLoginADO.D_login(loginBE);
+            return objLoginADO.D_login(user1, pass);
         }
     }
 }

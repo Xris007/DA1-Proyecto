@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtLogin = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -61,13 +61,13 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Usuario:";
             // 
-            // txtLogin
+            // txtUser
             // 
-            this.txtLogin.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogin.Location = new System.Drawing.Point(282, 51);
-            this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(170, 22);
-            this.txtLogin.TabIndex = 0;
+            this.txtUser.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.Location = new System.Drawing.Point(282, 51);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(170, 22);
+            this.txtUser.TabIndex = 0;
             // 
             // label2
             // 
@@ -123,7 +123,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtLogin);
+            this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.pictureBox1);
@@ -145,7 +145,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtLogin;
+        private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button button1;

@@ -8,7 +8,7 @@ namespace Proy_eSports_BE
 {
     public class LoginBE
     {
-        public String userEsport { get; set; }
-        public String password { get; set; }
+        public String user1 { get; set; }
+        public String pass { get; set; }
     }
 }

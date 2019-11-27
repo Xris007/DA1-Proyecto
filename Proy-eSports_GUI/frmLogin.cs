@@ -29,19 +29,22 @@ namespace Proy_eSports_GUI
         {
             DataTable dataTable = new DataTable();
 
-            loginBE.userEsport = txtLogin.Text.Trim();
-            loginBE.password = txtPassword.Text.Trim();
+            loginBE.user1 = txtUser.Text.Trim();
+            loginBE.pass = txtPassword.Text.Trim();
 
-            dataTable = loginBL.BL_Login(loginBE);
+            dataTable = loginBL.IngresarUsuario(loginBE.user1,loginBE.pass);
 
 
 
-            if (txtLogin.Text.Trim() != "" & txtPassword.Text.Trim() != "")
+            if (txtUser.Text.Trim() != "" & txtPassword.Text.Trim() != "")
             {
-                if (dataTable.Rows.Count > 0)
+
+               
+
+                if (dataTable.Rows.Count == 1)
                 {
-                    loginBE.userEsport = dataTable.Rows[0][0].ToString();
-                    loginBE.password = dataTable.Rows[0][1].ToString();
+                    loginBE.user1 = dataTable.Rows[0][0].ToString();
+                    loginBE.pass = dataTable.Rows[0][1].ToString();
 
                     this.Hide();
                     timer1.Enabled = false;
@@ -50,9 +53,9 @@ namespace Proy_eSports_GUI
 
                     this.Visible = true;
                     tiempo = 20;
-                    txtLogin.Text = String.Empty;
+                    txtUser.Text = String.Empty;
                     txtPassword.Text = String.Empty;
-                    txtLogin.Focus();
+                    txtUser.Focus();
                     timer1.Enabled = true;
 
                 }

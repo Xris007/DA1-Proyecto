@@ -17,25 +17,34 @@ namespace Proy_eSports_ADO
         //SqlDataReader dataReader;
         SqlDataAdapter dataAdapter;
 
-        public DataTable D_login(Proy_eSports_BE.LoginBE obje)
+        public DataTable D_login(String user1, String pass)
         {
-            connection.ConnectionString = MiConexion.GetCnx();
-            command.Connection = connection;
-            command.CommandType = CommandType.StoredProcedure;
-            command.CommandText = "usp_login";
-
-            command.Parameters.AddWithValue("@user",obje.userEsport);
-            command.Parameters.AddWithValue("@pass", obje.password);
-
             
 
-            DataTable dtable1 = new DataTable();
-           
-            dataAdapter = new SqlDataAdapter(command);
+            try
+            {
+                connection.ConnectionString = MiConexion.GetCnx();
+                command.Connection = connection;
+                command.CommandType = CommandType.StoredProcedure;
+                command.CommandText = "usp_Usuario";
 
-            dataAdapter.Fill(dtable1);
-            return dtable1;
+                command.Parameters.AddWithValue("@user", user1);
+                command.Parameters.AddWithValue("@pass", pass);
 
+
+
+                SqlDataAdapter sqlDataAdapter;
+                sqlDataAdapter = new SqlDataAdapter(command);
+                DataTable dataTable = new DataTable();
+                sqlDataAdapter.Fill(dataTable);
+
+                return dataTable;
+                //sqlDataAdapter.Fill(dataSet, "Usuario");
+            }
+            catch (Exception ex) {
+                throw new Exception(ex.Message);
+            }
+            
         }
     }
 }

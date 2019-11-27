@@ -44,7 +44,10 @@
   <ItemGroup>
     <Compile Include="ConexionADO.cs" />
     <Compile Include="DetailTeamADO.cs" />
+    <Compile Include="HeroeADO.cs" />
+    <Compile Include="JugadorADO.cs" />
     <Compile Include="LoginADO.cs" />
+    <Compile Include="PartidaJugadorADO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TeamADO.cs" />
     <Compile Include="TournamentADO.cs" />

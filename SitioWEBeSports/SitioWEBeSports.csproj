@@ -111,6 +111,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Consultas\Hero Consulta\WebHereoRol.aspx" />
+    <Content Include="Consultas\Jugador Consulta\WebJugadorCapitanPais.aspx" />
     <Content Include="Consultas\Team Consulta\WebEquiposDetalle.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -234,6 +235,13 @@
     </Compile>
     <Compile Include="Consultas\Hero Consulta\WebHereoRol.aspx.designer.cs">
       <DependentUpon>WebHereoRol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Jugador Consulta\WebJugadorCapitanPais.aspx.cs">
+      <DependentUpon>WebJugadorCapitanPais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\Jugador Consulta\WebJugadorCapitanPais.aspx.designer.cs">
+      <DependentUpon>WebJugadorCapitanPais.aspx</DependentUpon>
     </Compile>
     <Compile Include="Consultas\Team Consulta\WebEquiposDetalle.aspx.cs">
       <DependentUpon>WebEquiposDetalle.aspx</DependentUpon>

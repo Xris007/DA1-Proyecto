@@ -25,3 +25,12 @@ D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_ADO\obj\Debug\Proy-eSports_ADO.
 D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_ADO\obj\Debug\Proy-eSports_ADO.csproj.CopyComplete
 D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_ADO\obj\Debug\Proy-eSports_ADO.dll
 D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_ADO\obj\Debug\Proy-eSports_ADO.pdb
+C:\ISIL\Desarrollo de Aplicaciones 1\DA1-Proyecto\Proy-eSports_ADO\bin\Debug\Proy-eSports_ADO.dll
+C:\ISIL\Desarrollo de Aplicaciones 1\DA1-Proyecto\Proy-eSports_ADO\bin\Debug\Proy-eSports_ADO.pdb
+C:\ISIL\Desarrollo de Aplicaciones 1\DA1-Proyecto\Proy-eSports_ADO\bin\Debug\Proy-eSports_BE.dll
+C:\ISIL\Desarrollo de Aplicaciones 1\DA1-Proyecto\Proy-eSports_ADO\bin\Debug\Proy-eSports_BE.pdb
+C:\ISIL\Desarrollo de Aplicaciones 1\DA1-Proyecto\Proy-eSports_ADO\obj\Debug\Proy-eSports_ADO.csprojAssemblyReference.cache
+C:\ISIL\Desarrollo de Aplicaciones 1\DA1-Proyecto\Proy-eSports_ADO\obj\Debug\Proy-eSports_ADO.csproj.CoreCompileInputs.cache
+C:\ISIL\Desarrollo de Aplicaciones 1\DA1-Proyecto\Proy-eSports_ADO\obj\Debug\Proy-eSports_ADO.csproj.CopyComplete
+C:\ISIL\Desarrollo de Aplicaciones 1\DA1-Proyecto\Proy-eSports_ADO\obj\Debug\Proy-eSports_ADO.dll
+C:\ISIL\Desarrollo de Aplicaciones 1\DA1-Proyecto\Proy-eSports_ADO\obj\Debug\Proy-eSports_ADO.pdb

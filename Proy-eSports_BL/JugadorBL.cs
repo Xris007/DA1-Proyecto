@@ -16,5 +16,25 @@ namespace Proy_eSports_BL
         {
             return objJugadorADO.ListarJugador();
         }
+
+        public DataTable ListarCapitanes()
+        {
+            return objJugadorADO.ListarCapitanes();
+        }
+
+        public DataTable ListarCapitanesPorPais(String pais)
+        {
+            return objJugadorADO.ListarCapitanPorPais(pais);
+        }
+
+        public DataTable ListarPaisJugador()
+        {
+            return objJugadorADO.ListarPaisJugador();
+        }
+
+        public DataTable ListarJugadorPorPais(String pais)
+        {
+            return objJugadorADO.ListarJugadorPorPais(pais);
+        }
     }
 }

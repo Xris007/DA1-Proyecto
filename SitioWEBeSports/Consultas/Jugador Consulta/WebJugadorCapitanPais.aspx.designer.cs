@@ -7,46 +7,37 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SitioWEBeSports.Consultas.Hero_Consulta {
+namespace SitioWEBeSports.Consultas.Jugador_Consulta {
     
     
-    public partial class WebHereoRol {
+    public partial class WebJugadorCapitanPais {
         
         /// <summary>
-        /// cboHeroe control.
+        /// cboPais control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cboHeroe;
+        protected global::System.Web.UI.WebControls.DropDownList cboPais;
         
         /// <summary>
-        /// cboHeroe_DropDownExtender control.
+        /// cboPais_DropDownExtender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::AjaxControlToolkit.DropDownExtender cboHeroe_DropDownExtender;
+        protected global::AjaxControlToolkit.DropDownExtender cboPais_DropDownExtender;
         
         /// <summary>
-        /// cboRol control.
+        /// chkCapitan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cboRol;
-        
-        /// <summary>
-        /// cboRol_DropDownExtender control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::AjaxControlToolkit.DropDownExtender cboRol_DropDownExtender;
+        protected global::System.Web.UI.WebControls.CheckBox chkCapitan;
         
         /// <summary>
         /// IdMostrar control.
@@ -67,13 +58,13 @@ namespace SitioWEBeSports.Consultas.Hero_Consulta {
         protected global::System.Web.UI.WebControls.Label lblResultado;
         
         /// <summary>
-        /// grvHereoRolDetalle control.
+        /// grvJugador control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grvHereoRolDetalle;
+        protected global::System.Web.UI.WebControls.GridView grvJugador;
         
         /// <summary>
         /// lnkMensaje control.

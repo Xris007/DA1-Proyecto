@@ -48,22 +48,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DetailTournament01.cs">
+    <Compile Include="DetailTournament\DetailTournament01.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailTournament01.Designer.cs">
+    <Compile Include="DetailTournament\DetailTournament01.Designer.cs">
       <DependentUpon>DetailTournament01.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetailTournament02.cs">
+    <Compile Include="DetailTournament\DetailTournament02.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailTournament02.Designer.cs">
+    <Compile Include="DetailTournament\DetailTournament02.Designer.cs">
       <DependentUpon>DetailTournament02.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetailTournament03.cs">
+    <Compile Include="DetailTournament\DetailTournament03.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailTournament03.Designer.cs">
+    <Compile Include="DetailTournament\DetailTournament03.Designer.cs">
       <DependentUpon>DetailTournament03.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
@@ -71,6 +71,24 @@
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hero\Hero02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hero\Hero02.Designer.cs">
+      <DependentUpon>Hero02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hero\Hero03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hero\Hero03.Designer.cs">
+      <DependentUpon>Hero03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hero\Hero01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hero\Hero01.Designer.cs">
+      <DependentUpon>Hero01.cs</DependentUpon>
     </Compile>
     <Compile Include="MDIPrincipal.cs">
       <SubType>Form</SubType>
@@ -80,53 +98,62 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Team01.cs">
+    <Compile Include="Team\Team01.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Team01.Designer.cs">
+    <Compile Include="Team\Team01.Designer.cs">
       <DependentUpon>Team01.cs</DependentUpon>
     </Compile>
-    <Compile Include="Team02.cs">
+    <Compile Include="Team\Team02.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Team02.Designer.cs">
+    <Compile Include="Team\Team02.Designer.cs">
       <DependentUpon>Team02.cs</DependentUpon>
     </Compile>
-    <Compile Include="Team03.cs">
+    <Compile Include="Team\Team03.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Team03.Designer.cs">
+    <Compile Include="Team\Team03.Designer.cs">
       <DependentUpon>Team03.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tournament01.cs">
+    <Compile Include="Tournament\Tournament01.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tournament01.Designer.cs">
+    <Compile Include="Tournament\Tournament01.Designer.cs">
       <DependentUpon>Tournament01.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tournament02.cs">
+    <Compile Include="Tournament\Tournament02.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tournament02.Designer.cs">
+    <Compile Include="Tournament\Tournament02.Designer.cs">
       <DependentUpon>Tournament02.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tournament03.cs">
+    <Compile Include="Tournament\Tournament03.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tournament03.Designer.cs">
+    <Compile Include="Tournament\Tournament03.Designer.cs">
       <DependentUpon>Tournament03.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DetailTournament01.resx">
+    <EmbeddedResource Include="DetailTournament\DetailTournament01.resx">
       <DependentUpon>DetailTournament01.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetailTournament02.resx">
+    <EmbeddedResource Include="DetailTournament\DetailTournament02.resx">
       <DependentUpon>DetailTournament02.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetailTournament03.resx">
+    <EmbeddedResource Include="DetailTournament\DetailTournament03.resx">
       <DependentUpon>DetailTournament03.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hero\Hero02.resx">
+      <DependentUpon>Hero02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hero\Hero03.resx">
+      <DependentUpon>Hero03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hero\Hero01.resx">
+      <DependentUpon>Hero01.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIPrincipal.resx">
       <DependentUpon>MDIPrincipal.cs</DependentUpon>
@@ -141,22 +168,22 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Team01.resx">
+    <EmbeddedResource Include="Team\Team01.resx">
       <DependentUpon>Team01.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Team02.resx">
+    <EmbeddedResource Include="Team\Team02.resx">
       <DependentUpon>Team02.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Team03.resx">
+    <EmbeddedResource Include="Team\Team03.resx">
       <DependentUpon>Team03.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tournament01.resx">
+    <EmbeddedResource Include="Tournament\Tournament01.resx">
       <DependentUpon>Tournament01.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tournament02.resx">
+    <EmbeddedResource Include="Tournament\Tournament02.resx">
       <DependentUpon>Tournament02.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tournament03.resx">
+    <EmbeddedResource Include="Tournament\Tournament03.resx">
       <DependentUpon>Tournament03.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

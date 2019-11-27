@@ -19,9 +19,11 @@ namespace Proy_eSports_GUI
 
         DetailTeamBL objDetailTeamBL = new DetailTeamBL();
         DetailTeamBE objDetailTeamBE = new DetailTeamBE();
+        
         public DetailTournament03()
         {
             InitializeComponent();
+            
         }
         String idEquipo;
         public String Codigo1
@@ -39,6 +41,8 @@ namespace Proy_eSports_GUI
 
         private void DetailTournament03_Load(object sender, EventArgs e)
         {
+            
+
             try
             {
 
@@ -52,11 +56,11 @@ namespace Proy_eSports_GUI
                 cboTournament.DisplayMember = "NomTorneo";
 
                 objDetailTeamBE = objDetailTeamBL.ConsultDetailTeam(Codigo1, Codigo2);
-
                 
-
+                
+                
                 //txtVictories.Text = objDetailTeamBE.Victorias;
-
+                
 
                 //txtDefeats.Text = objDetailTeamBE.Derrotas;
                 //txtPlacement.Text = objDetailTeamBE.Puesto;

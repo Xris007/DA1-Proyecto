@@ -153,3 +153,6 @@ D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy-eSports_GUI.
 D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy-eSports_GUI.csproj.CopyComplete
 D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy-eSports_GUI.exe
 D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy-eSports_GUI.pdb
+D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.Hero02.resources
+D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.Hero03.resources
+D:\Trabajos\Desarrollo\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.Hero01.resources

@@ -101,6 +101,7 @@
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.dtgHero);
             this.Name = "Hero01";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hero01";
             this.Load += new System.EventHandler(this.Hero01_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgHero)).EndInit();

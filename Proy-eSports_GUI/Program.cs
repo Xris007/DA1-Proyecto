@@ -16,7 +16,7 @@ namespace Proy_eSports_GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Hero01());
+            Application.Run(new MDIPrincipal());
         }
     }
 }

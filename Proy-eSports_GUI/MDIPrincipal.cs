@@ -67,5 +67,12 @@ namespace Proy_eSports_GUI
                 e.Cancel = true;
             }
         }
+
+        private void heroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hero01 frm04 = new Hero01();
+            frm04.MdiParent = this;
+            frm04.Show();
+        }
     }
 }

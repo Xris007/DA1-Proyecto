@@ -31,13 +31,14 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.teamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.torneoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.teamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.detailTournamentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.heroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +55,7 @@
             // opcionesToolStripMenuItem
             // 
             this.opcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.heroToolStripMenuItem,
             this.torneoToolStripMenuItem,
             this.teamToolStripMenuItem,
             this.detailTournamentToolStripMenuItem,
@@ -64,19 +66,19 @@
             this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.opcionesToolStripMenuItem.Text = "Opciones";
             // 
-            // teamToolStripMenuItem
-            // 
-            this.teamToolStripMenuItem.Name = "teamToolStripMenuItem";
-            this.teamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.teamToolStripMenuItem.Text = "Team";
-            this.teamToolStripMenuItem.Click += new System.EventHandler(this.teamToolStripMenuItem_Click);
-            // 
             // torneoToolStripMenuItem
             // 
             this.torneoToolStripMenuItem.Name = "torneoToolStripMenuItem";
             this.torneoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.torneoToolStripMenuItem.Text = "Tournament";
             this.torneoToolStripMenuItem.Click += new System.EventHandler(this.torneoToolStripMenuItem_Click);
+            // 
+            // teamToolStripMenuItem
+            // 
+            this.teamToolStripMenuItem.Name = "teamToolStripMenuItem";
+            this.teamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.teamToolStripMenuItem.Text = "Team";
+            this.teamToolStripMenuItem.Click += new System.EventHandler(this.teamToolStripMenuItem_Click);
             // 
             // detailTournamentToolStripMenuItem
             // 
@@ -103,6 +105,13 @@
             this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
+            // 
+            // heroToolStripMenuItem
+            // 
+            this.heroToolStripMenuItem.Name = "heroToolStripMenuItem";
+            this.heroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.heroToolStripMenuItem.Text = "Hero";
+            this.heroToolStripMenuItem.Click += new System.EventHandler(this.heroToolStripMenuItem_Click);
             // 
             // MDIPrincipal
             // 
@@ -133,5 +142,6 @@
         private System.Windows.Forms.ToolStripMenuItem restartToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripMenuItem heroToolStripMenuItem;
     }
 }

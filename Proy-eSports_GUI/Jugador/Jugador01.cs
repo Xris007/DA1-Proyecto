@@ -5,27 +5,29 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proy_eSports_BL;
 
-namespace Proy_eSports_GUI
+namespace ProyVentas_GUI
 {
-    public partial class Team01 : Form
+    public partial class Jugador01 : Form
     {
-        TeamBL objTeamBL = new TeamBL();
-        public Team01()
+
+        JugadorBL jugadorBL = new JugadorBL();
+
+
+        public Jugador01()
         {
             InitializeComponent();
         }
+
         public void CargarDatos()
         {
-            dtgTeam.DataSource = objTeamBL.ListTeams();
+            dtgJugador.DataSource = jugadorBL.ListarJugador();
+
         }
 
-   
-
-        private void Team01_Load(object sender, EventArgs e)
+        private void ProveedorMan01_Load(object sender, EventArgs e)
         {
             try
             {
@@ -37,41 +39,43 @@ namespace Proy_eSports_GUI
             }
         }
 
-        private void btnInsert_Click(object sender, EventArgs e)
+
+
+        private void btnInsertar_Click(object sender, EventArgs e)
         {
-            Team02 frm02 = new Team02();
+            Jugador02 frm02 = new Jugador02();
             frm02.ShowDialog();
             CargarDatos();
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void btnActualizar_Click(object sender, EventArgs e)
         {
-            String idEquipo;
-            idEquipo = dtgTeam.CurrentRow.Cells[0].Value.ToString();
+            String idJugador;
+            idJugador = dtgJugador.CurrentRow.Cells[0].Value.ToString();
 
 
-            Team03 frm03 = new Team03();
-            frm03.Codigo = idEquipo;
+            Jugador03 frm03 = new Jugador03();
+            frm03.Codigo = idJugador;
             frm03.ShowDialog();
             CargarDatos();
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
             try
             {
-                DialogResult dr = MessageBox.Show("¿Seguro(a) de eliminar este equipo?", "Confirmar", MessageBoxButtons.YesNo,
+                DialogResult dr = MessageBox.Show("¿Seguro(a) de eliminar este jugador?", "Confirmar", MessageBoxButtons.YesNo,
                     MessageBoxIcon.Warning);
 
                 if (dr == DialogResult.Yes)
                 {
-                    String idEquipo;
+                    String idJugador;
                     //obtener el codigo del proveedor sleccionado 
-                    idEquipo = dtgTeam.CurrentRow.Cells[0].Value.ToString();
+                    idJugador = dtgJugador.CurrentRow.Cells[0].Value.ToString();
 
-                    if (!objTeamBL.DeleteTeam(idEquipo))
+                    if (!jugadorBL.EliminarJugador(idJugador))
                     {
-                        throw new Exception("Error: No se actualizó el registro correctamente.");
+                        throw new Exception("Error: No se eliminó el registro correctamente.");
                     }
                     CargarDatos();
                 }
@@ -87,5 +91,6 @@ namespace Proy_eSports_GUI
         {
             this.Close();
         }
+        
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using Proy_eSports_ADO;
+using Proy_eSports_BE;
 
 namespace Proy_eSports_BL
 {
@@ -35,6 +36,26 @@ namespace Proy_eSports_BL
         public DataTable ListarJugadorPorPais(String pais)
         {
             return objJugadorADO.ListarJugadorPorPais(pais);
+        }
+
+        public Boolean InsertarJugador(JugadorBE jugadorBE)
+        {
+            return objJugadorADO.InsertarJugador(jugadorBE);
+        }
+
+        public Boolean ActualizarJugador(JugadorBE jugadorBE)
+        {
+            return objJugadorADO.ActualizarJugador(jugadorBE);
+        }
+
+        public Boolean EliminarJugador(String IdJugador)
+        {
+            return objJugadorADO.EliminarJugador(IdJugador);
+        }
+
+        public JugadorBE ConsultarJugador(String IdJugador)
+        {
+            return objJugadorADO.ConsultarJugador(IdJugador);
         }
     }
 }

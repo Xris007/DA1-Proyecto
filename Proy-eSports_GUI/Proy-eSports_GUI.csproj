@@ -90,6 +90,24 @@
     <Compile Include="Hero\Hero01.Designer.cs">
       <DependentUpon>Hero01.cs</DependentUpon>
     </Compile>
+    <Compile Include="Jugador\Jugador01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jugador\Jugador01.designer.cs">
+      <DependentUpon>Jugador01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jugador\Jugador02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jugador\Jugador02.designer.cs">
+      <DependentUpon>Jugador02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jugador\Jugador03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jugador\Jugador03.designer.cs">
+      <DependentUpon>Jugador03.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDIPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +173,15 @@
     <EmbeddedResource Include="Hero\Hero01.resx">
       <DependentUpon>Hero01.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Jugador\Jugador01.resx">
+      <DependentUpon>Jugador01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jugador\Jugador02.resx">
+      <DependentUpon>Jugador02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jugador\Jugador03.resx">
+      <DependentUpon>Jugador03.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDIPrincipal.resx">
       <DependentUpon>MDIPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,5 +241,6 @@
       <Name>Proy-eSports_BL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

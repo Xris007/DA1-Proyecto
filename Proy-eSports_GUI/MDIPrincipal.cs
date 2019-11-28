@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.VisualBasic.Devices;
-
+using ProyVentas_GUI;
 
 namespace Proy_eSports_GUI
 {
@@ -39,7 +39,7 @@ namespace Proy_eSports_GUI
 
         private void detailTournamentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DetailTournament01 frm03 = new DetailTournament01();
+            Jugador01 frm03 = new Jugador01();
             frm03.MdiParent = this;
             frm03.Show();
 
@@ -73,6 +73,11 @@ namespace Proy_eSports_GUI
             Hero01 frm04 = new Hero01();
             frm04.MdiParent = this;
             frm04.Show();
+        }
+
+        private void opcionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

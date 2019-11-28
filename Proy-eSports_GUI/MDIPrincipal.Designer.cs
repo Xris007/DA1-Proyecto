@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.heroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.torneoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.teamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.detailTournamentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,7 +39,6 @@
             this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.heroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +65,14 @@
             this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
             this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.opcionesToolStripMenuItem.Text = "Opciones";
+            this.opcionesToolStripMenuItem.Click += new System.EventHandler(this.opcionesToolStripMenuItem_Click);
+            // 
+            // heroToolStripMenuItem
+            // 
+            this.heroToolStripMenuItem.Name = "heroToolStripMenuItem";
+            this.heroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.heroToolStripMenuItem.Text = "Hero";
+            this.heroToolStripMenuItem.Click += new System.EventHandler(this.heroToolStripMenuItem_Click);
             // 
             // torneoToolStripMenuItem
             // 
@@ -84,7 +92,7 @@
             // 
             this.detailTournamentToolStripMenuItem.Name = "detailTournamentToolStripMenuItem";
             this.detailTournamentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.detailTournamentToolStripMenuItem.Text = "Detail Tournament";
+            this.detailTournamentToolStripMenuItem.Text = "Player";
             this.detailTournamentToolStripMenuItem.Click += new System.EventHandler(this.detailTournamentToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
@@ -105,13 +113,6 @@
             this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
-            // 
-            // heroToolStripMenuItem
-            // 
-            this.heroToolStripMenuItem.Name = "heroToolStripMenuItem";
-            this.heroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.heroToolStripMenuItem.Text = "Hero";
-            this.heroToolStripMenuItem.Click += new System.EventHandler(this.heroToolStripMenuItem_Click);
             // 
             // MDIPrincipal
             // 

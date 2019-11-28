@@ -56,14 +56,14 @@ namespace Proy_eSports_GUI
                 cboTournament.DisplayMember = "NomTorneo";
 
                 objDetailTeamBE = objDetailTeamBL.ConsultDetailTeam(Codigo1, Codigo2);
-                
-                
-                
-                //txtVictories.Text = objDetailTeamBE.Victorias;
+
+
+
+                txtVictories.Text = objDetailTeamBE.Victorias.ToString();
                 
 
-                //txtDefeats.Text = objDetailTeamBE.Derrotas;
-                //txtPlacement.Text = objDetailTeamBE.Puesto;
+                txtDefeats.Text = objDetailTeamBE.Derrotas.ToString();
+                txtPlacement.Text = objDetailTeamBE.Puesto.ToString();
             }
             catch (Exception ex)
             {

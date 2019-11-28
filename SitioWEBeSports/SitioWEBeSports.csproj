@@ -110,7 +110,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="Consultas\Hero Consulta\WebHereoRol.aspx" />
+    <Content Include="Consultas\Hero\WebHereoRol.aspx" />
+    <Content Include="Consultas\Home.aspx" />
     <Content Include="Consultas\Jugador Consulta\WebJugadorCapitanPais.aspx" />
     <Content Include="Consultas\Team Consulta\WebEquiposDetalle.aspx" />
     <Content Include="Contact.aspx" />
@@ -156,15 +157,20 @@
     <Content Include="Images\document_certificate.png" />
     <Content Include="Images\document_dirty.png" />
     <Content Include="Images\document_lock.png" />
+    <Content Include="Images\dota_heroes.png" />
     <Content Include="Images\Editar.png" />
     <Content Include="Images\Estetoscopio.JPG" />
     <Content Include="Images\fondo.jpg" />
     <Content Include="Images\heroAccent.png" />
     <Content Include="Images\indicator.gif" />
+    <Content Include="Images\lc.jpg" />
     <Content Include="Images\loading.gif" />
     <Content Include="Images\loading2.gif" />
+    <Content Include="Images\m1.jpeg" />
+    <Content Include="Images\mo.jpeg" />
     <Content Include="Images\money.png" />
     <Content Include="Images\moneybag.png" />
+    <Content Include="Images\mpo.jpeg" />
     <Content Include="Images\note_new.png" />
     <Content Include="Images\orderedList0.png" />
     <Content Include="Images\orderedList1.png" />
@@ -184,6 +190,8 @@
     <Content Include="Images\p6.jpg" />
     <Content Include="Images\p7.jpg" />
     <Content Include="Images\Peru.png" />
+    <Content Include="Images\serveimage.jpg" />
+    <Content Include="Images\teams.jpg" />
     <Content Include="Images\Testeo1.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -229,12 +237,19 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Consultas\Hero Consulta\WebHereoRol.aspx.cs">
+    <Compile Include="Consultas\Hero\WebHereoRol.aspx.cs">
       <DependentUpon>WebHereoRol.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Consultas\Hero Consulta\WebHereoRol.aspx.designer.cs">
+    <Compile Include="Consultas\Hero\WebHereoRol.aspx.designer.cs">
       <DependentUpon>WebHereoRol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Consultas\Jugador Consulta\WebJugadorCapitanPais.aspx.cs">
       <DependentUpon>WebJugadorCapitanPais.aspx</DependentUpon>

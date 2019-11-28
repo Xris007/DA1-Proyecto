@@ -179,7 +179,7 @@ namespace Proy_eSports_ADO
             return dataSet.Tables["DETALLE_EQUIPO"];
         }
 
-        public DataTable ListDetailTeambyTournaments(String TeamId, String TounId1, String TounId2)
+        public DataTable ListDetailTeambyTournaments(String TeamId, String TounId)
         {
             try
             {
@@ -190,12 +190,12 @@ namespace Proy_eSports_ADO
                 connection.ConnectionString = MiConexion.GetCnx();
                 command.Connection = connection;
                 command.CommandType = CommandType.StoredProcedure;
-                command.CommandText = "ListDetailTeambyTournaments";
+                command.CommandText = "ListarDetalleEquipoTorneo";
 
                 command.Parameters.Clear();
-                command.Parameters.AddWithValue("@IdTeam", TeamId);
-                command.Parameters.AddWithValue("@IdTornament1", TounId1);
-                command.Parameters.AddWithValue("@IdTornament2", TounId2);
+                command.Parameters.AddWithValue("@IdEquipo", TeamId);
+                command.Parameters.AddWithValue("@IdTorneo", TounId);
+                
 
                 ada = new SqlDataAdapter(command);
 

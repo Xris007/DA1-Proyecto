@@ -16,3 +16,9 @@ C:\ISIL\DA1 Proyecto\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.cspr
 C:\ISIL\DA1 Proyecto\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.csproj.CoreCompileInputs.cache
 C:\ISIL\DA1 Proyecto\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.dll
 C:\ISIL\DA1 Proyecto\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.pdb
+D:\Trabajos\Desarrollo\test\DA1-Proyecto\Proy-eSports_BE\bin\Debug\Proy-eSports_BE.dll
+D:\Trabajos\Desarrollo\test\DA1-Proyecto\Proy-eSports_BE\bin\Debug\Proy-eSports_BE.pdb
+D:\Trabajos\Desarrollo\test\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.csprojAssemblyReference.cache
+D:\Trabajos\Desarrollo\test\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.csproj.CoreCompileInputs.cache
+D:\Trabajos\Desarrollo\test\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.dll
+D:\Trabajos\Desarrollo\test\DA1-Proyecto\Proy-eSports_BE\obj\Debug\Proy-eSports_BE.pdb

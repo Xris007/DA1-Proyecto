@@ -42,16 +42,15 @@ namespace SitioWEBeSports.Consultas.Hero_Consulta
                     cboRol.SelectedValue.ToString().Trim());
                 grvHereoRolDetalle.DataBind();
 
-                
+                lblResultado.Text = "Se han encontrado: " + grvHereoRolDetalle.Rows.Count.ToString() + " resultados";
 
                 if (grvHereoRolDetalle.Rows.Count == 0)
                 {
                     throw new Exception("No se ha encontrado resultados");
                 }
-                else
-                {
-                    lblResultado.Text = "Se han encontrado: " + grvHereoRolDetalle.Rows.Count.ToString() + " resultados";
-                }
+                
+                    
+                
             }
             catch (Exception ex)
             {

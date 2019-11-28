@@ -27,23 +27,16 @@ namespace SitioWEBeSports.Consultas.Team_Consulta
                     cboTeam.DataBind();
 
                     //Combo Torneo
-                    cboTmnt1.DataSource     = objTournamentBL.ListTournaments();
-                    cboTmnt1.DataTextField  = "NomTorneo";
-                    cboTmnt1.DataValueField = "IdTorneo";
-                    cboTmnt1.DataBind();
-
-                    cboTmnt2.DataSource = objTournamentBL.ListTournaments();
-                    cboTmnt2.DataTextField = "NomTorneo";
-                    cboTmnt2.DataValueField = "IdTorneo";
-                    cboTmnt2.DataBind();
-
-
+                    cboTorneo.DataSource     = objTournamentBL.ListTournaments();
+                    cboTorneo.DataTextField  = "NomTorneo";
+                    cboTorneo.DataValueField = "IdTorneo";
+                    cboTorneo.DataBind();
 
                 }
             }
             catch (Exception ex)
             {
-                lblMensaje1.Text = ex.Message;
+                lblResultado.Text = ex.Message;
             }
         }
 
@@ -53,19 +46,21 @@ namespace SitioWEBeSports.Consultas.Team_Consulta
             {
                 grvDetailTeam.DataSource = objDetailTeamBL.ListDetailTeambyTournaments(
                     cboTeam.SelectedValue.ToString(),
-                    cboTmnt1.SelectedValue.ToString(),
-                    cboTmnt2.SelectedValue.ToString()
-                    );
+                    cboTorneo.SelectedValue.ToString());
                 grvDetailTeam.DataBind();
-                
+
+                lblResultado.Text = "El Equipo seleccionado ha participado en: " + grvDetailTeam.Rows.Count.ToString() + " Torneo";
+
                 if (grvDetailTeam.Rows.Count == 0)
                 {
-                    throw new Exception("El equipo " + (cboTeam.DataTextField = "NomEquipo") + " no ha participado entre los torneos " + cboTmnt1.DataTextField + " y " + cboTmnt2.DataTextField);
+                    throw new Exception("El equipo seleccionado no registra participacion en el torneo seleccionado");
                 }
+                
             }
             catch (Exception ex)
             {
-                lblMensaje1.Text = ex.Message;
+                lblMensaje.Text = ex.Message;
+                mpeMensaje.Show();
             }
         }
     }

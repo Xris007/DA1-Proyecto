@@ -37,7 +37,9 @@
             <td style="height: 23px"></td>
         </tr>
         <tr>
-            <td style="width: 217px">&nbsp;</td>
+            <td style="width: 217px">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Consultas/Home.aspx">Ir al Home</asp:HyperLink>
+            </td>
             <td>
                 <asp:Label ID="lblResultado" runat="server"></asp:Label>
             </td>

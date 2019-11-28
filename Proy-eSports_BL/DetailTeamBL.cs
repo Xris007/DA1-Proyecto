@@ -35,9 +35,9 @@ namespace Proy_eSports_BL
         {
             return objDetailADO.ListDetailTeam();
         }
-        public DataTable ListDetailTeambyTournaments(String TeamId, String TounId1, String TounId2)
+        public DataTable ListDetailTeambyTournaments(String TeamId, String TounId)
         {
-            return objDetailADO.ListDetailTeambyTournaments(TeamId,TounId1,TounId2);
+            return objDetailADO.ListDetailTeambyTournaments(TeamId,TounId);
         }
        
 

@@ -33,7 +33,9 @@
             <td>
                 <asp:Label ID="lblResultado" runat="server"></asp:Label>
             </td>
-            <td>&nbsp;</td>
+            <td>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Consultas/Home.aspx">Ir al Home</asp:HyperLink>
+            </td>
         </tr>
         <tr>
             <td colspan="3">

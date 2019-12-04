@@ -65,7 +65,7 @@
     </div>
     <br />
     <div class="container-fluid">
-    <asp:GridView ID="grvAtributo" runat="server" Width="517px" AutoGenerateColumns="False" CssClass="table table-striped table-bordered table-hover">
+    <asp:GridView ID="grvAtributo" runat="server" DataKeyNames="IdHeroe" Width="517px" AutoGenerateColumns="False" CssClass="table table-striped table-bordered table-hover">
                     <Columns>
                         <asp:BoundField DataField="IdHeroe" HeaderText="Id.Heroe" />
                         <asp:BoundField DataField="NomHeroe" HeaderText="Heroe" />

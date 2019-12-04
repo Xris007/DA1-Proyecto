@@ -33,8 +33,8 @@ namespace SitioWEBeSports.Consultas.Complejidad
             try
             {
                 grvAtributo.DataSource = objHeroeBL.ListarHeroePorComplejidadAtributo(
-                    cboComplejidad.SelectedValue.ToString(),
-                    cboAtributo.SelectedValue.ToString());
+                    cboComplejidad.SelectedItem.ToString(),
+                    cboAtributo.SelectedItem.ToString());
                 grvAtributo.DataBind();
 
                 
@@ -45,7 +45,7 @@ namespace SitioWEBeSports.Consultas.Complejidad
                 }
                 else
                 {
-                    lblResultado.Text = "Se ha encontrado: " + grvAtributo.Rows.Count.ToString() + "heroes con atributo " + grvAtributo.SelectedValue.ToString();
+                    lblResultado.Text = "Se ha encontrado: " + grvAtributo.Rows.Count.ToString() + " heroes con atributo " + cboAtributo.SelectedValue.ToString();
                 }
                
             }

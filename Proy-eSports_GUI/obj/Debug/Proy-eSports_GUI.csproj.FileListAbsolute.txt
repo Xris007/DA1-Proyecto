@@ -316,3 +316,43 @@ D:\Trabajos\Desarrollo\proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy-eSp
 D:\Trabajos\Desarrollo\proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy-eSports_GUI.pdb
 D:\Trabajos\Desarrollo\proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\MaterialSkin.dll
 D:\Trabajos\Desarrollo\proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Proy-eSports_GUI.exe.config
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Proy-eSports_GUI.exe
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Proy-eSports_GUI.pdb
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\MaterialSkin.dll
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Proy-eSports_BE.dll
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Proy-eSports_BL.dll
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Proy-eSports_ADO.dll
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Proy-eSports_BE.pdb
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Proy-eSports_BL.pdb
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\bin\Debug\Proy-eSports_ADO.pdb
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy-eSports_GUI.csprojAssemblyReference.cache
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.DetailTournament01.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.DetailTournament02.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.DetailTournament03.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.frmLogin.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.Hero02.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.Hero03.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.Hero01.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\ProyVentas_GUI.Jugador01.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\ProyVentas_GUI.Jugador02.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\ProyVentas_GUI.Jugador03.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.MDIPrincipal.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.Properties.Resources.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.Team01.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.Team02.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.Team03.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.Tournament01.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.Tournament02.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy_eSports_GUI.Tournament03.resources
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy-eSports_GUI.csproj.GenerateResource.cache
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy-eSports_GUI.csproj.CoreCompileInputs.cache
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy-eSports_GUI.csproj.CopyComplete
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy-eSports_GUI.exe
+C:\ISIL\Desarrollo de Aplicaciones 1\Proyecto\DA1-Proyecto\Proy-eSports_GUI\obj\Debug\Proy-eSports_GUI.pdb

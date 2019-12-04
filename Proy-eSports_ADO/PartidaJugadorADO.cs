@@ -29,7 +29,7 @@ namespace Proy_eSports_ADO
 
                 command.Parameters.Clear();
 
-                command.Parameters.AddWithValue("@idheroe", idheroe);
+                command.Parameters.AddWithValue("@nomHero", idheroe);
                 command.Parameters.AddWithValue("@roljugador", roljugador);
 
                 sqlDataAdapter = new SqlDataAdapter(command);

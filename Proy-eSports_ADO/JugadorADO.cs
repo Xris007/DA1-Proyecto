@@ -62,6 +62,33 @@ namespace Proy_eSports_ADO
             return dataSet.Tables["Jugador"];
         }
 
+        public DataTable ListarJugadorEquipo(String idEquipo)
+        {
+            try
+            {
+                DataSet dataSet = new DataSet();
+                SqlDataAdapter sqlDataAdapter;
+
+                connection.ConnectionString = MiConexion.GetCnx();
+                command.Connection = connection;
+                command.CommandType = CommandType.StoredProcedure;
+                command.CommandText = "ListarEquipoJugadores";
+
+                command.Parameters.Clear();
+
+                command.Parameters.AddWithValue("@Equipo", idEquipo);
+
+                sqlDataAdapter = new SqlDataAdapter(command);
+                sqlDataAdapter.Fill(dataSet, "EQUIPO");
+                return dataSet.Tables["EQUIPO"];
+
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public DataTable ListarCapitanPorPais(String pais)
         {
             DataSet dataSet = new DataSet();

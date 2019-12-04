@@ -110,6 +110,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Consultas\Complejidad\WebAtributoComplejidad.aspx" />
+    <Content Include="Consultas\EquipoJugador Consulta\WebForm1.aspx" />
     <Content Include="Consultas\Hero\WebHereoRol.aspx" />
     <Content Include="Consultas\Home.aspx" />
     <Content Include="Consultas\Jugador Consulta\WebJugadorCapitanPais.aspx" />
@@ -121,6 +123,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="CSS\DemoCSS.css" />
+    <Content Include="CSS\gridwiewCSS.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -159,6 +162,7 @@
     <Content Include="Images\document_lock.png" />
     <Content Include="Images\dota_heroes.png" />
     <Content Include="Images\Editar.png" />
+    <Content Include="Images\elementales.jpg" />
     <Content Include="Images\Estetoscopio.JPG" />
     <Content Include="Images\fondo.jpg" />
     <Content Include="Images\heroAccent.png" />
@@ -237,6 +241,20 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Consultas\Complejidad\WebAtributoComplejidad.aspx.cs">
+      <DependentUpon>WebAtributoComplejidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\Complejidad\WebAtributoComplejidad.aspx.designer.cs">
+      <DependentUpon>WebAtributoComplejidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\EquipoJugador Consulta\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\EquipoJugador Consulta\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\Hero\WebHereoRol.aspx.cs">
       <DependentUpon>WebHereoRol.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

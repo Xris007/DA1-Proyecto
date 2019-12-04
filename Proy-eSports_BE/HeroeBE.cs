@@ -38,6 +38,6 @@ namespace Proy_eSports_BE
             get { return mvarcomplejidad_heroe; }
             set { mvarcomplejidad_heroe = value; }
         }
-
+        
     }
 }

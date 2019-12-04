@@ -15,8 +15,7 @@ namespace Proy_eSports_GUI
     public partial class frmLogin : Form
     {
 
-        LoginBE loginBE = new LoginBE();
-        LoginBL loginBL = new LoginBL();
+        
 
         int intentos = 0;
         int tiempo = 20;
@@ -27,7 +26,11 @@ namespace Proy_eSports_GUI
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+
+
             DataTable dataTable = new DataTable();
+            LoginBE loginBE = new LoginBE();
+            LoginBL loginBL = new LoginBL();
 
             loginBE.user1 = txtUser.Text.Trim();
             loginBE.pass = txtPassword.Text.Trim();

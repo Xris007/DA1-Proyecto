@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<title>Bootstrap Example</title>
+<title>eSports</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -27,7 +27,7 @@
       <h3>Consultas Heroes</h3>
       
         <div class="thumbnail">
-        <a href="/Consultas/Hero/WebHereoRol.aspx" target="_blank" >
+        <a href="/Consultas/Hero/WebHereoRol.aspx">
           
             <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/dota_heroes.png" />
           <div class="caption">
@@ -41,7 +41,7 @@
       </h3>
       
         <div class="thumbnail">
-        <a href="/Consultas/Jugador Consulta/WebJugadorCapitanPais.aspx" target="_blank">
+        <a href="/Consultas/Jugador Consulta/WebJugadorCapitanPais.aspx">
           
             <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/lc.jpg" />
           <div class="caption">
@@ -63,6 +63,48 @@
         </a>
       </div>
     </div>
+      <div class="col-sm-4">
+      <h3>Consultas Atributos</h3>
+      
+        <div class="thumbnail">
+        <a href="/Consultas/Complejidad/WebAtributoComplejidad.aspx"  >
+          
+            <asp:Image ID="Image4" runat="server" ImageUrl="~/Images/elementales.jpg" />
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+   <div class="col-sm-4">
+      <h3>Consultas Jugador Detalle
+      </h3>
+      
+        <div class="thumbnail">
+        <a href="/Consultas/EquipoJugador Consulta/WebForm1.aspx" target="_blank">
+          
+            <asp:Image ID="Image5" runat="server" ImageUrl="~/Images/lc.jpg" />
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <h3>Consultas Equipo Detalle</h3>
+      
+        <div class="thumbnail">
+        <a href="/Consultas/Team Consulta/WebEquiposDetalle.aspx" >
+          
+            <asp:Image ID="Image6" runat="server" ImageUrl="~/Images/serveimage.jpg"/>
+          <div class="caption">
+            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+                
   </div>
 </div>
 </body>

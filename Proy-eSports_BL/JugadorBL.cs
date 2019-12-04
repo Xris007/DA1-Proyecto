@@ -17,6 +17,10 @@ namespace Proy_eSports_BL
         {
             return objJugadorADO.ListarJugador();
         }
+        public DataTable ListarJugadorequipo(String idEquipo)
+        {
+            return objJugadorADO.ListarJugadorEquipo(idEquipo);
+        }
 
         public DataTable ListarCapitanes()
         {

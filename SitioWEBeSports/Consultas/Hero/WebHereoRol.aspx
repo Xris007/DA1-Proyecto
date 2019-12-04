@@ -1,18 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebHereoRol.aspx.cs" Inherits="SitioWEBeSports.Consultas.Hero_Consulta.WebHereoRol" %>
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
+  
 
     <p class="tituloForm">
         <br />
         Consulta Heroes de Dota 2</p>
     <p class="tituloForm">
         &nbsp;</p>
+    <div class="container">
     <table style="width: 86%">
         <tr>
             <td style="height: 23px; width: 217px">Seleccione Hereos:</td>
             <td style="height: 23px">
-                <asp:DropDownList ID="cboHeroe" runat="server" Width="220px">
+                <asp:DropDownList ID="cboHeroe" runat="server" Width="220px" >
                 </asp:DropDownList>
                 <ajaxToolkit:DropDownExtender ID="cboHeroe_DropDownExtender" runat="server" BehaviorID="cboHeroe_DropDownExtender" DynamicServicePath="" TargetControlID="cboHeroe">
                 </ajaxToolkit:DropDownExtender>
@@ -37,41 +38,33 @@
             <td style="height: 23px"></td>
         </tr>
         <tr>
-            <td style="width: 217px">
+            <td class="auto-style1">
                 <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Consultas/Home.aspx">Ir al Home</asp:HyperLink>
             </td>
-            <td>
+            <td class="auto-style2">
                 <asp:Label ID="lblResultado" runat="server"></asp:Label>
             </td>
-            <td>&nbsp;</td>
+            <td class="auto-style2"></td>
         </tr>
         <tr>
             <td colspan="3">
-                <asp:GridView ID="grvHereoRolDetalle" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="884px" AutoGenerateColumns="False">
-                    <AlternatingRowStyle BackColor="White" />
+                <div class="grid-container">
+                <asp:GridView ID="grvHereoRolDetalle" runat="server" Width="884px" AutoGenerateColumns="False" CssClass="table table-striped table-bordered table-hover">
                     <Columns>
-                        <asp:BoundField DataField="IdPartida" HeaderText="Id. Partida" />
-                        <asp:BoundField DataField="IdJugador" HeaderText="Id. Jugador" />
+                        <asp:BoundField DataField="NomTorneo" HeaderText="Torneo" />
+                        <asp:BoundField DataField="RoundPartida" HeaderText="Round" />
                         <asp:BoundField DataField="NickJugador" HeaderText="Nick Name" />
-                        <asp:BoundField DataField="IdHeroe" HeaderText="Id. Heroe" />
-                        <asp:BoundField DataField="IdHeroe" HeaderText="Heroe" />
+                        <asp:BoundField DataField="NomHeroe" HeaderText="Heroe" />
                         <asp:BoundField DataField="Kills" HeaderText="Asesinatos" />
                         <asp:BoundField DataField="Deaths" HeaderText="Muertes" />
                         <asp:BoundField DataField="Assists" HeaderText="Asistencias" />
                     </Columns>
-                    <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                    <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                    <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
-                    <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
-                    <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
-                    <SortedAscendingCellStyle BackColor="#FDF5AC" />
-                    <SortedAscendingHeaderStyle BackColor="#4D0000" />
-                    <SortedDescendingCellStyle BackColor="#FCF6C0" />
-                    <SortedDescendingHeaderStyle BackColor="#820000" />
                 </asp:GridView>
+                </div>
             </td>
         </tr>
     </table>
+    </div>
     <br />
     <%--Este es el panel  que contiene los mensajes de error--%>
               <asp:LinkButton ID="lnkMensaje" runat="server" ></asp:LinkButton>

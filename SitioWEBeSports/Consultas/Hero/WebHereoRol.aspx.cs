@@ -19,9 +19,10 @@ namespace SitioWEBeSports.Consultas.Hero_Consulta
             {
                 if (!Page.IsPostBack)
                 {
+                   
                     cboHeroe.DataSource = objHeroeBL.ListarHeroes();
                     cboHeroe.DataTextField = "NomHeroe";
-                    cboHeroe.DataValueField = "IdHeroe";
+                    cboHeroe.DataValueField = "NomHeroe";
                     cboHeroe.DataBind();
 
                     

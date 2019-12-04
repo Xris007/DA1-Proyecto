@@ -126,6 +126,8 @@ namespace Proy_eSports_ADO
                 connection.Open();
                 dataReader = command.ExecuteReader();
 
+                
+
                 if (dataReader.HasRows)
                 {
                     dataReader.Read();
@@ -180,5 +182,33 @@ namespace Proy_eSports_ADO
             }
             return dataSet.Tables["Heroe"];
         }
+        public DataTable ListarHeroePorComplejidadAtributo(String complejidad, String atributo)
+        {
+            try
+            {
+                DataSet dataSet = new DataSet();
+                SqlDataAdapter sqlDataAdapter;
+
+                connection.ConnectionString = MiConexion.GetCnx();
+                command.Connection = connection;
+                command.CommandType = CommandType.StoredProcedure;
+                command.CommandText = "usp_ListarHeroePorComplejidadAtributo";
+
+                command.Parameters.Clear();
+              
+                command.Parameters.AddWithValue("@complejidad", complejidad);
+                command.Parameters.AddWithValue("@atributo", atributo);
+
+                sqlDataAdapter = new SqlDataAdapter(command);
+                sqlDataAdapter.Fill(dataSet, "DETALLE_JUGADOR_PARTIDA");
+                return dataSet.Tables["DETALLE_JUGADOR_PARTIDA"];
+
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        
     }
 }

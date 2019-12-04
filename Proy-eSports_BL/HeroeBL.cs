@@ -33,5 +33,9 @@ namespace Proy_eSports_BL
         {
             return objHeroeADO.ListarHeroes();
         }
+        public DataTable ListarHeroePorComplejidadAtributo(String complejidad, String atributo)
+        {
+            return objHeroeADO.ListarHeroePorComplejidadAtributo(complejidad, atributo);
+        }
     }
 }

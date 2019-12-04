@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin;
+using MaterialSkin.Controls;
 using Proy_eSports_BL;
 
 namespace Proy_eSports_GUI
@@ -17,6 +19,11 @@ namespace Proy_eSports_GUI
         public Hero01()
         {
             InitializeComponent();
+            //MaterialSkinManager m = MaterialSkinManager.Instance;
+            //m.AddFormToManage(this);
+            //m.Theme = MaterialSkinManager.Themes.LIGHT;
+            //m.ColorScheme = new ColorScheme(Primary.Green900, Primary.Green700,Primary.Green500,Accent.LightGreen200,TextShade.WHITE);
+            
         }
         public void CargarDatos()
         {

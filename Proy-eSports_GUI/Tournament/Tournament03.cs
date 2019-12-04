@@ -69,5 +69,10 @@ namespace Proy_eSports_GUI
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

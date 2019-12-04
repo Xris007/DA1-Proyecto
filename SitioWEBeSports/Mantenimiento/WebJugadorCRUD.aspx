@@ -11,11 +11,10 @@
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Consultas/Home.aspx">Ir al Home</asp:HyperLink>
     </p>
     <p>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="935px"  OnRowCommand="GridView1_RowCommand">
-            <AlternatingRowStyle BackColor="White" />
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Width="935px"  OnRowCommand="GridView1_RowCommand" CssClass="table table-striped table-bordered table-hover">
             <Columns>
                 <asp:ButtonField ButtonType="Image" CommandName="Editar" ImageUrl="~/Images/docRM.png" Text="Botón">
-                <ItemStyle Width="20px" />
+                <ItemStyle Width="30px" />
                 </asp:ButtonField>
                 <asp:BoundField DataField="IdJugador" HeaderText="ID">
                 <ItemStyle Width="20px" />
@@ -39,15 +38,6 @@
                 <ItemStyle Width="120px" />
                 </asp:BoundField>
             </Columns>
-            <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-            <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
-            <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
-            <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
-            <SortedAscendingCellStyle BackColor="#FDF5AC" />
-            <SortedAscendingHeaderStyle BackColor="#4D0000" />
-            <SortedDescendingCellStyle BackColor="#FCF6C0" />
-            <SortedDescendingHeaderStyle BackColor="#820000" />
         </asp:GridView>
     </p>
 

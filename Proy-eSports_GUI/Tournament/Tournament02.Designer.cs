@@ -62,6 +62,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.btnAccept);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(542, 306);
@@ -71,7 +72,9 @@
             // 
             // txtLocation
             // 
+            this.txtLocation.BackColor = System.Drawing.Color.SteelBlue;
             this.txtLocation.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLocation.ForeColor = System.Drawing.Color.White;
             this.txtLocation.Location = new System.Drawing.Point(330, 114);
             this.txtLocation.Name = "txtLocation";
             this.txtLocation.Size = new System.Drawing.Size(129, 22);
@@ -127,7 +130,9 @@
             // 
             // txtCountry
             // 
+            this.txtCountry.BackColor = System.Drawing.Color.SteelBlue;
             this.txtCountry.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCountry.ForeColor = System.Drawing.Color.White;
             this.txtCountry.Location = new System.Drawing.Point(97, 114);
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Size = new System.Drawing.Size(129, 22);
@@ -145,7 +150,9 @@
             // 
             // txtTourName
             // 
+            this.txtTourName.BackColor = System.Drawing.Color.SteelBlue;
             this.txtTourName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTourName.ForeColor = System.Drawing.Color.White;
             this.txtTourName.Location = new System.Drawing.Point(234, 45);
             this.txtTourName.Name = "txtTourName";
             this.txtTourName.Size = new System.Drawing.Size(225, 22);
@@ -153,7 +160,9 @@
             // 
             // txtOrgTour
             // 
+            this.txtOrgTour.BackColor = System.Drawing.Color.SteelBlue;
             this.txtOrgTour.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrgTour.ForeColor = System.Drawing.Color.White;
             this.txtOrgTour.Location = new System.Drawing.Point(234, 78);
             this.txtOrgTour.Name = "txtOrgTour";
             this.txtOrgTour.Size = new System.Drawing.Size(225, 22);
@@ -181,33 +190,40 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(413, 237);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(93, 40);
             this.button2.TabIndex = 4;
             this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnAccept
             // 
+            this.btnAccept.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnAccept.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccept.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccept.Location = new System.Drawing.Point(314, 237);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(93, 40);
             this.btnAccept.TabIndex = 3;
             this.btnAccept.Text = "Accept";
-            this.btnAccept.UseVisualStyleBackColor = true;
+            this.btnAccept.UseVisualStyleBackColor = false;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
             // Tournament02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(572, 337);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Tournament02";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Insert Tournament";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

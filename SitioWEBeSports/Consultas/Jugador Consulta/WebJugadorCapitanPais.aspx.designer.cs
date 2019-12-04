@@ -31,15 +31,6 @@ namespace SitioWEBeSports.Consultas.Jugador_Consulta {
         protected global::AjaxControlToolkit.DropDownExtender cboPais_DropDownExtender;
         
         /// <summary>
-        /// Control chkCapitan.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkCapitan;
-        
-        /// <summary>
         /// Control IdMostrar.
         /// </summary>
         /// <remarks>
@@ -49,13 +40,13 @@ namespace SitioWEBeSports.Consultas.Jugador_Consulta {
         protected global::System.Web.UI.WebControls.Button IdMostrar;
         
         /// <summary>
-        /// Control lblResultado.
+        /// Control chkCapitan.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblResultado;
+        protected global::System.Web.UI.WebControls.CheckBox chkCapitan;
         
         /// <summary>
         /// Control HyperLink1.
@@ -65,6 +56,15 @@ namespace SitioWEBeSports.Consultas.Jugador_Consulta {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        
+        /// <summary>
+        /// Control lblResultado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblResultado;
         
         /// <summary>
         /// Control grvJugador.

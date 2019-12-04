@@ -54,6 +54,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btnCancelar);
             this.groupBox1.Controls.Add(this.btnGrabar);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(14, 13);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(542, 306);
@@ -63,6 +64,8 @@
             // 
             // txtComplejidad
             // 
+            this.txtComplejidad.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtComplejidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtComplejidad.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtComplejidad.Location = new System.Drawing.Point(182, 179);
             this.txtComplejidad.Name = "txtComplejidad";
@@ -71,6 +74,8 @@
             // 
             // txtTipo
             // 
+            this.txtTipo.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtTipo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTipo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTipo.Location = new System.Drawing.Point(182, 139);
             this.txtTipo.Name = "txtTipo";
@@ -89,6 +94,8 @@
             // 
             // txtAtributo
             // 
+            this.txtAtributo.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtAtributo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAtributo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAtributo.Location = new System.Drawing.Point(182, 97);
             this.txtAtributo.Name = "txtAtributo";
@@ -117,6 +124,8 @@
             // 
             // txtNomHeroe
             // 
+            this.txtNomHeroe.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtNomHeroe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNomHeroe.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomHeroe.Location = new System.Drawing.Point(182, 61);
             this.txtNomHeroe.Name = "txtNomHeroe";
@@ -135,32 +144,39 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(413, 237);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(93, 40);
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancel";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // btnGrabar
             // 
+            this.btnGrabar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGrabar.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrabar.Location = new System.Drawing.Point(314, 237);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(93, 40);
             this.btnGrabar.TabIndex = 3;
             this.btnGrabar.Text = "Save";
-            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.UseVisualStyleBackColor = false;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // Hero03
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(570, 333);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Hero03";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hero03";
             this.Load += new System.EventHandler(this.Hero03_Load);
             this.groupBox1.ResumeLayout(false);

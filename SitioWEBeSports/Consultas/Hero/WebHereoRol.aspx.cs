@@ -43,7 +43,7 @@ namespace SitioWEBeSports.Consultas.Hero_Consulta
                     cboRol.SelectedValue.ToString().Trim());
                 grvHereoRolDetalle.DataBind();
 
-                lblResultado.Text = "Se han encontrado: " + grvHereoRolDetalle.Rows.Count.ToString() + " resultados";
+                lblResultado.Text = grvHereoRolDetalle.Rows.Count.ToString() + " resultados usando a " + cboHeroe.SelectedValue.ToString() + " en el rol de " +cboRol.SelectedValue.ToString();
 
                 if (grvHereoRolDetalle.Rows.Count == 0)
                 {

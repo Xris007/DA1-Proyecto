@@ -70,6 +70,8 @@
             this.grpDatos.Controls.Add(this.Label3);
             this.grpDatos.Controls.Add(this.Label4);
             this.grpDatos.Controls.Add(this.btnCancelar);
+            this.grpDatos.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpDatos.ForeColor = System.Drawing.Color.White;
             this.grpDatos.Location = new System.Drawing.Point(9, 12);
             this.grpDatos.Name = "grpDatos";
             this.grpDatos.Size = new System.Drawing.Size(400, 284);
@@ -79,10 +81,12 @@
             // 
             // cboEquipo
             // 
+            this.cboEquipo.BackColor = System.Drawing.Color.SteelBlue;
+            this.cboEquipo.ForeColor = System.Drawing.Color.White;
             this.cboEquipo.FormattingEnabled = true;
             this.cboEquipo.Location = new System.Drawing.Point(101, 228);
             this.cboEquipo.Name = "cboEquipo";
-            this.cboEquipo.Size = new System.Drawing.Size(162, 21);
+            this.cboEquipo.Size = new System.Drawing.Size(162, 24);
             this.cboEquipo.TabIndex = 32;
             // 
             // chkCapitan
@@ -104,9 +108,12 @@
             // 
             // txtPais
             // 
+            this.txtPais.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtPais.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPais.ForeColor = System.Drawing.Color.White;
             this.txtPais.Location = new System.Drawing.Point(101, 141);
             this.txtPais.Name = "txtPais";
-            this.txtPais.Size = new System.Drawing.Size(192, 20);
+            this.txtPais.Size = new System.Drawing.Size(192, 21);
             this.txtPais.TabIndex = 28;
             // 
             // label6
@@ -119,9 +126,12 @@
             // 
             // txtEdad
             // 
+            this.txtEdad.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtEdad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEdad.ForeColor = System.Drawing.Color.White;
             this.txtEdad.Location = new System.Drawing.Point(101, 116);
             this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(36, 20);
+            this.txtEdad.Size = new System.Drawing.Size(36, 21);
             this.txtEdad.TabIndex = 26;
             // 
             // label5
@@ -134,6 +144,8 @@
             // 
             // cboRol
             // 
+            this.cboRol.BackColor = System.Drawing.Color.SteelBlue;
+            this.cboRol.ForeColor = System.Drawing.Color.White;
             this.cboRol.FormattingEnabled = true;
             this.cboRol.Items.AddRange(new object[] {
             "Hard Carry",
@@ -143,16 +155,19 @@
             "Support"});
             this.cboRol.Location = new System.Drawing.Point(101, 195);
             this.cboRol.Name = "cboRol";
-            this.cboRol.Size = new System.Drawing.Size(162, 21);
+            this.cboRol.Size = new System.Drawing.Size(162, 24);
             this.cboRol.TabIndex = 21;
             // 
             // btnGrabar
             // 
+            this.btnGrabar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnGrabar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGrabar.Location = new System.Drawing.Point(310, 109);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(72, 24);
             this.btnGrabar.TabIndex = 24;
             this.btnGrabar.Text = "Grabar";
+            this.btnGrabar.UseVisualStyleBackColor = false;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click_1);
             // 
             // Label1
@@ -165,23 +180,32 @@
             // 
             // txtApellido
             // 
+            this.txtApellido.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtApellido.ForeColor = System.Drawing.Color.White;
             this.txtApellido.Location = new System.Drawing.Point(101, 26);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(192, 20);
+            this.txtApellido.Size = new System.Drawing.Size(192, 21);
             this.txtApellido.TabIndex = 15;
             // 
             // txtNombre
             // 
+            this.txtNombre.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombre.ForeColor = System.Drawing.Color.White;
             this.txtNombre.Location = new System.Drawing.Point(101, 58);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(192, 20);
+            this.txtNombre.Size = new System.Drawing.Size(192, 21);
             this.txtNombre.TabIndex = 16;
             // 
             // txtNick
             // 
+            this.txtNick.BackColor = System.Drawing.Color.SteelBlue;
+            this.txtNick.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNick.ForeColor = System.Drawing.Color.White;
             this.txtNick.Location = new System.Drawing.Point(101, 90);
             this.txtNick.Name = "txtNick";
-            this.txtNick.Size = new System.Drawing.Size(192, 20);
+            this.txtNick.Size = new System.Drawing.Size(192, 21);
             this.txtNick.TabIndex = 17;
             // 
             // Label2
@@ -218,17 +242,21 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Location = new System.Drawing.Point(310, 141);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(72, 24);
             this.btnCancelar.TabIndex = 25;
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
             // Jugador03
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(421, 308);
             this.Controls.Add(this.grpDatos);
             this.Name = "Jugador03";

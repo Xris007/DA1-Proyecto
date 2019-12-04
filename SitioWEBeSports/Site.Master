@@ -54,8 +54,8 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="/Consultas/Home">Inicio</a></li>
-                        <li><a runat="server" href="~/About">Acerca de</a></li>
-                        <li><a runat="server" href="~/Contact">Contacto</a></li>
+                        <li><a runat="server" href="~/Mantenimiento/WebJugadorCRUD.aspx">Mantenimiento</a></li>
+                        <li><a runat="server" href="~/Images/gaa.jpg">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,7 +65,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Mi aplicación ASP.NET</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Developed by Us</p>
             </footer>
         </div>
 

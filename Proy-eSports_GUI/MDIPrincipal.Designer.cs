@@ -70,47 +70,47 @@
             // heroToolStripMenuItem
             // 
             this.heroToolStripMenuItem.Name = "heroToolStripMenuItem";
-            this.heroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.heroToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.heroToolStripMenuItem.Text = "Hero";
             this.heroToolStripMenuItem.Click += new System.EventHandler(this.heroToolStripMenuItem_Click);
             // 
             // torneoToolStripMenuItem
             // 
             this.torneoToolStripMenuItem.Name = "torneoToolStripMenuItem";
-            this.torneoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.torneoToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.torneoToolStripMenuItem.Text = "Tournament";
             this.torneoToolStripMenuItem.Click += new System.EventHandler(this.torneoToolStripMenuItem_Click);
             // 
             // teamToolStripMenuItem
             // 
             this.teamToolStripMenuItem.Name = "teamToolStripMenuItem";
-            this.teamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.teamToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.teamToolStripMenuItem.Text = "Team";
             this.teamToolStripMenuItem.Click += new System.EventHandler(this.teamToolStripMenuItem_Click);
             // 
             // detailTournamentToolStripMenuItem
             // 
             this.detailTournamentToolStripMenuItem.Name = "detailTournamentToolStripMenuItem";
-            this.detailTournamentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.detailTournamentToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.detailTournamentToolStripMenuItem.Text = "Player";
             this.detailTournamentToolStripMenuItem.Click += new System.EventHandler(this.detailTournamentToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(135, 6);
             // 
             // restartToolStripMenuItem
             // 
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.restartToolStripMenuItem.Text = "Restart";
             this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
@@ -120,9 +120,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(899, 496);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MDIPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MDIPrincipal";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MDIPrincipal_FormClosing);
             this.menuStrip1.ResumeLayout(false);

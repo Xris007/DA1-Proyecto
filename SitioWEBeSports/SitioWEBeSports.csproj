@@ -161,10 +161,12 @@
     <Content Include="Images\document_dirty.png" />
     <Content Include="Images\document_lock.png" />
     <Content Include="Images\dota_heroes.png" />
+    <Content Include="Images\drow.png" />
     <Content Include="Images\Editar.png" />
     <Content Include="Images\elementales.jpg" />
     <Content Include="Images\Estetoscopio.JPG" />
     <Content Include="Images\fondo.jpg" />
+    <Content Include="Images\gaa.jpg" />
     <Content Include="Images\heroAccent.png" />
     <Content Include="Images\indicator.gif" />
     <Content Include="Images\lc.jpg" />
@@ -195,9 +197,10 @@
     <Content Include="Images\p7.jpg" />
     <Content Include="Images\Peru.png" />
     <Content Include="Images\serveimage.jpg" />
+    <Content Include="Images\te.jpg" />
     <Content Include="Images\teams.jpg" />
     <Content Include="Images\Testeo1.jpg" />
-    <Content Include="Mantenimento\WebJugadorCRUD.aspx" />
+    <Content Include="Mantenimiento\WebJugadorCRUD.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -301,11 +304,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Mantenimento\WebJugadorCRUD.aspx.cs">
+    <Compile Include="Mantenimiento\WebJugadorCRUD.aspx.cs">
       <DependentUpon>WebJugadorCRUD.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Mantenimento\WebJugadorCRUD.aspx.designer.cs">
+    <Compile Include="Mantenimiento\WebJugadorCRUD.aspx.designer.cs">
       <DependentUpon>WebJugadorCRUD.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

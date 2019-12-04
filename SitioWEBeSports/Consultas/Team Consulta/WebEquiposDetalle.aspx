@@ -49,17 +49,7 @@
         </tr>
         <tr>
             <td colspan="3">
-                <asp:GridView ID="grvDetailTeam" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="604px">
-                    <AlternatingRowStyle BackColor="White" />
-                    <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                    <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                    <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
-                    <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
-                    <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
-                    <SortedAscendingCellStyle BackColor="#FDF5AC" />
-                    <SortedAscendingHeaderStyle BackColor="#4D0000" />
-                    <SortedDescendingCellStyle BackColor="#FCF6C0" />
-                    <SortedDescendingHeaderStyle BackColor="#820000" />
+                <asp:GridView ID="grvDetailTeam" runat="server" Width="604px" CssClass="table table-striped table-bordered table-hover">
                 </asp:GridView>
             </td>
         </tr>

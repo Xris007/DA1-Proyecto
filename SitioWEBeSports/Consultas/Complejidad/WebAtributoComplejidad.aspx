@@ -13,7 +13,7 @@
 
 
     </style>
-    <p>
+    <p class="tituloForm">
         <br />
         Consulta de Atributo por Complejidad
     </p>
@@ -49,7 +49,7 @@
         </tr>
         <tr>
             <td>
-                <asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Consultas/Home.aspx">Ir a Home</asp:HyperLink>
             </td>
             <td>
                 <asp:Label ID="lblResultado" runat="server"></asp:Label>

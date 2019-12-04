@@ -25,23 +25,13 @@
         </tr>
         <tr>
             <td colspan="3">
-                <asp:GridView ID="grvJugadores" runat="server" AutoGenerateColumns="False" Width="535px" CellPadding="4" ForeColor="#333333" GridLines="None">
-                    <AlternatingRowStyle BackColor="White" />
+                <asp:GridView ID="grvJugadores" runat="server" AutoGenerateColumns="False" Width="535px" CssClass="table table-striped table-bordered table-hover">
                     <Columns>
                         <asp:BoundField DataField="NomJugador" HeaderText="Nombre" />
                         <asp:BoundField DataField="ApeJugador" HeaderText="Apellido" />
                         <asp:BoundField DataField="NickJugador" HeaderText="NickName" />
                         <asp:BoundField DataField="PaisJugador" HeaderText="Pais" />
                     </Columns>
-                    <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                    <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-                    <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
-                    <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
-                    <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
-                    <SortedAscendingCellStyle BackColor="#FDF5AC" />
-                    <SortedAscendingHeaderStyle BackColor="#4D0000" />
-                    <SortedDescendingCellStyle BackColor="#FCF6C0" />
-                    <SortedDescendingHeaderStyle BackColor="#820000" />
                 </asp:GridView>
             </td>
         </tr>

@@ -109,5 +109,13 @@ namespace Proy_eSports_GUI
         {
             Application.Exit();
         }
+
+        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                btnIngresar.PerformClick();
+            }
+        }
     }
 }
